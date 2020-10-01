@@ -109,7 +109,7 @@ font {
   transition: all 0.3s ease;
 }
 
-.lessons .summary .summary-list::after {
+.lessons .summary .summary-list::before, .lessons .summary .summary-list::after {
   content: "";
   position: absolute;
   left: 10px;
@@ -120,11 +120,18 @@ font {
   background: #dfdfdf;
 }
 
+.lessons .summary .summary-list::before {
+  background: #51c23b;
+  width: 20%;
+  z-index: 1;
+}
+
 .lessons .summary .header-summary {
   position: relative;
   font-size: 18px;
   padding: 5px;
   margin: 0 0 10px 0;
+  text-align: center;
 }
 
 .lessons .summary .header-summary::after {
