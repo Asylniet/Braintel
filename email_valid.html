@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- The above 3 meta tags *Must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Braintel | Проверка Email</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.png" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+
+    <!--Font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="spinner"></div>
+    </div>
+
+    <div class="main">
+      <div id="header"></div>
+
+      <!--Start of signup-area-->
+      <div class="landing-form" style="max-width: 450px; margin: 50px auto;">
+        <center>
+          <h1 class="cursor-d">Проверка Email</h1>
+        </center>
+        <form action="#" method="POST" id="form" name="form">
+          <center>
+            <input
+              type="email"
+              name="email"
+              class="landing-input"
+              required
+              placeholder="Email"
+              id="email"
+            />
+            <input
+              type="number"
+              name="code"
+              class="landing-input"
+              required
+              placeholder="Код"
+              id="code"
+            /><br />
+            <button
+              type="submit"
+              name="submit_login"
+              class="start login-btn cursor-p"
+              style="width: 80%;"
+              id="button"
+              onClick="redirect()"
+            >
+              Проверить код
+				</button>
+			</div>
+          </center>
+        </form>
+      </div>
+    </div>
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+
+    <!-- Active js -->
+	 <script src="js/main.js"></script>
+	 <script src="js/core.js"></script>
+	 <script>
+		 $('#button').click(function redirect(){
+			window.location.replace("reset-password.html");
+		 });
+	 </script>
+  </body>
+</html>

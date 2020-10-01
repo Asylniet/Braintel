@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- The above 3 meta tags *Must* come first in the head; any other head content must come *after* these tags -->
+
+	<!-- Title -->
+	<title>Braintel</title>
+
+	<!-- Favicon -->
+	<link rel="icon" href="img/favicon.png">
+
+	<!-- Stylesheet -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+
+
+	<!--AOS.css-->
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<!-- AOS.js-->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+	<!--Font-->
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,400&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+	<!-- Preloader -->
+	<div id="preloader">
+		<div class="spinner"></div>
+	</div>
+
+	<div class="main" id="main">
+		<header>
+			<!-- Navbar-->
+			<nav class="space-between p-10 navbar sticky">
+			<!--Logo-->
+			  <a href="/index.html" class="d-flex logo-font">
+				 <div class="logo"></div>
+				 <font class="logo-font" style="margin-left: 5px; position: static;">BRAINTEL</font>
+			  </a>
+			  <!--Navigation-->
+			  <div class="nav cursor-p d-flex ul">
+				 <div>
+					<ul class="d-flex ul">
+					  <li><a href="/index.html" class="navigation">Домой</a></li>
+					  <li class="position-rel d-flex column" style="overflow:hidden;">
+						 <a href="" class="navigation" id="course_btn">Курсы</a>
+						 <div class="drop-menu">
+							<ul class="d-flex column">
+							  <li class="position-rel d-flex column">
+								 <a href="" class="lvl2">Математика</a>
+								 <div class="drop-ness column d-flex">
+										<a href="/courses/math-7.html">&#160;7 класс</a> 
+										<a href="">&#160;8 класс</a>
+										<a href="">&#160;9 класс</a>
+										<a href="">&#160;10 класс</a>
+								 </div>                            
+								</li>
+							  </li>
+							  <li class="position-rel d-flex column">
+								 <a href="" class="lvl2">Физика</a>
+								 <div class="drop-ness column d-flex"> 
+									<a href="">&#160;7 класс</a>
+									<a href="">&#160;8 класс</a>
+									<a href="">&#160;9 класс</a>
+									<a href="">&#160;10 класс</a>
+								</div>
+							  </li>
+							</ul>
+						</div>
+					  </li>
+					  <li><a href="/blog.html" class="navigation">Блог</a></li>
+					  <li class="inline">
+						 <a href="/about.html" class="navigation">О нас</a>
+					  </li>
+					  <li><a href="#footer" class="navigation">Контакты</a></li>
+					</ul>
+				 </div>
+				 <!--search area-->
+				 <div class="d-flex ul position-rel" style="min-width: 200px;">
+					<div class="search-area search1">
+						<form method="POST" action="#">
+						  <input
+							 type="search"
+							 name="search"
+							 class="search p-10"
+							 placeholder="Поиск"
+						  />
+						  <div class="search-btn cursor-p position-rel">
+							 <i class="fa fa-search" aria-hidden="true"></i>
+						  </div>
+						</form>
+					 </div>
+					<!--login-signup area-->
+					<!--If user is logged switch off this login-area-->
+					<div class="login-area p-10 m-10">
+					  <a href="/signup.html" class="btn signup-btn">Регистрация</a>
+					  <a href="/login.html" class="btn login-btn login">Войти</a>
+					</div>
+				 </div>
+			  </div>
+			  <div class="space-between position-rel">
+				<div class="search-area search2">
+					<form method="POST" action="#" class="position-rel search-form">
+					  <input
+						 type="search"
+						 name="search"
+						 class="search p-10"
+						 placeholder="Поиск"
+					  />
+					  <div class="search-btn cursor-p position-rel" >
+						 <i class="fa fa-search" aria-hidden="true"></i>
+					  </div>
+					</form>
+				 </div>
+				 <div class="burger">
+					<span></span>
+				 </div> 
+			  </div>
+			  <!--If user is logged switch on this div with class d-flex-->
+			  <div class="d-flex account-area position-rel">
+				<i class="fa fa-user-o account cursor-p"></i>
+				<div class="account-control d-flex column" style="display: none;">
+					<div class="d-flex">
+						<div class="avatar"></div>
+						<h3>Имя Фамилия</h3>
+					</div>
+					<div class="d-flex column">
+						<a href="#"> <i class="fa fa-cog"></i> Мой аккаунт</a>
+						<a href="#"> <i class="fa fa-book"></i> Мои курсы</a>
+						<a href="#"> <i class="fa fa-bookmark"></i> Сохраненные</a><br>
+						<a href="#" style="color:#c71f1f"> <i class="fa fa-circle" style="color: #c71f1f;"></i> Выйти</a>
+					</div>
+				</div>
+			 </div>
+			</nav>
+			<!--End of navbar-->
+		 </header>
+		 <!--End of header-->
+		<!--Let's start section-->
+		<div class="parallax">
+			<center>
+				<div class="parallax-content">
+					<font size="15px" class="font-white cursor-d"><b>Давай учиться вместе</b></font><br>
+					<center>
+						<h3 style="max-width: 500px; color:#e6e6e6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus quas unde ullam expedita optio, adipisci incidunt qui velit eum dicta.</h3>
+					</center><br><br>
+					<a href="signup.html" class="start login-btn">Начать</a>
+				</div>
+			</center>
+		</div>
+		<!--End of let's start section-->
+
+		<!-- Start of advantages section -->
+		<div class="advantages">
+			<center><h1 style="margin: 10px 0 50px 0;">Достигни своих целей вместе с Braintel</h1></center>
+			<div class="d-flex wrap position-rel">
+				<div class="d-flex wrap advantage-trust">
+					<div class="advantage d-flex column position-rel">
+						<div style="width:10%; min-width: 300px;">
+							<img src="img/bulb.png" alt="" style="width: 40%;">
+						</div>
+						<h3>Gain new knowledge</h3>
+						<font>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque modi eveniet vel quia dolor. Quia.</font>
+						<br><a href="#knowledge">Read more</a>
+					</div>
+		
+					<div class="advantage d-flex column position-rel">
+						<div style="width:10%; min-width: 300px;">
+							<img src="img/ask.png" alt="" style="width: 40%;">
+						</div>
+						<h3>Ask questions</h3>
+						<font>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque modi eveniet vel quia dolor. Quia.</font>
+						<br><a href="#questions">Read more</a>
+					</div>
+				</div>
+	
+				<div class="d-flex wrap advantage-trust">
+					<div class="advantage d-flex column position-rel">
+						<div style="width:10%; min-width: 300px;">
+							<img src="img/pencil.png" alt="" style="width: 40%;">
+						</div>
+						<h3>Get feedback</h3>
+						<font>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque modi eveniet vel quia dolor. Quia.</font>
+						<br><a href="#feedback">Read more</a>
+					</div>
+		
+					<div class="advantage d-flex column position-rel">
+						<div style="width:10%; min-width: 300px;">
+							<img src="img/blog.png" alt="" style="width: 40%;">
+						</div>
+						<h3>Read posts from the blog</h3>
+						<font>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque modi eveniet vel quia dolor. Quia.</font>
+						<br><a href="#blog">Read more</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+					<div id="knowledge">
+						<div class="two-columns d-flex wrap">
+							<div class="half-image">
+								<img src="img/knowledge.png" alt="">
+							</div>
+							<div class="d-flex column">
+								<h1>Gain new knowledge</h1><br>
+								<font>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel nesciunt incidunt praesentium voluptatem earum doloremque voluptates itaque reprehenderit assumenda illum.</font>
+							</div>
+						</div>
+					</div>
+			
+					<div id="questions">
+						<div class="two-columns d-flex wrap" style="background: transparent">
+							<div class="d-flex column" style="color:#000">
+								<h1>Ask questions</h1><br>
+								<font>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel nesciunt incidunt praesentium voluptatem earum doloremque voluptates itaque reprehenderit assumenda illum.</font>
+							</div>
+							<div class="half-image">
+								<img src="img/questions.png" alt="" style="width: 100%;">
+							</div>
+						</div>
+					</div>
+					<div id="feedback">
+						<div class="two-columns d-flex wrap">
+							<div class="half-image">
+								<img src="img/feedback.png" alt="" style="width: 90%;">
+							</div>
+							<div class="d-flex column">
+								<h1>Get feedback</h1><br>
+								<font>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel nesciunt incidunt praesentium voluptatem earum doloremque voluptates itaque reprehenderit assumenda illum.</font>
+							</div>
+						</div>
+					</div>
+			
+					<div id="blog">
+						<div class="two-columns d-flex wrap activate" style="background: transparent;">
+							<div class="d-flex column" style="color: #000;">
+								<h1>Read posts from the blog</h1><br>
+								<font>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel nesciunt incidunt praesentium voluptatem earum doloremque voluptates itaque reprehenderit assumenda illum.</font>
+							</div>
+							<div class="half-image">
+								<img src="img/posts.png" alt="" style="width: 100%;">
+							</div>
+						</div>
+					</div>
+		
+		<!--Start of achievements-->
+		<div class="m-50 p-10">
+			<center><h1 class="p-10">Почему мы?</h1></center>
+			<div class="achievements space-around wrap">
+				<!--Single block-->
+				<div data-aos-duration="1000" data-aos="fade-up">
+					<div class="blocks d-flex">
+						<img src="img/events.png">
+						<span class="counter">
+							<h1>1912</h1>
+						</span>
+						<span>
+							<h3>Довольных клиентов</h3>
+						</span>
+					</div>
+				</div>
+	
+				<!--Single block-->
+				<div data-aos-duration="1000" data-aos-delay="400" data-aos="fade-up">
+					<div class="blocks d-flex">
+						<img src="img/docs.png">
+						<span class="counter">
+							<h1>123</h1>
+						</span>
+						<span>
+							<h3>Уроков</h3>
+						</span>
+					</div>
+				</div>
+	
+				<!--Single block-->
+				<div data-aos-duration="1000" data-aos-delay="800" data-aos="fade-up">
+					<div class="blocks d-flex">
+						<img src="img/earth.png">
+						<span class="counter">
+							<h1>23</h1>
+						</span>
+						<span>
+							<h3>Доступных курсов</h3>
+						</span>
+					</div>
+				</div>
+	
+				<!--Single block-->
+				<div data-aos-duration="1000" data-aos-delay="1200" data-aos="fade-up">
+					<div class="blocks d-flex">
+						<img src="img/star.png">
+						<div style="display:inline-block;">
+							<span class="counter">
+								<h1>100</h1>
+							</span>
+							<font>%</font>
+						</div>
+						<span>
+							<h3>Бесплатно</h3>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--End of achievements-->
+
+		<!-- Start of comments -->
+		<div class="comments p-10">
+			<div class="d-flex column" style="font-size: 16px;">
+				<h1>From Braintel comunity</h1>
+				<font>Reviews and feedbacks from delighted students </font>
+					<div class="p-10">
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+						<i class="fa fa-star-o"></i>
+					</div>
+			</div>
+			<div class="slider">
+				<div class="slider-content position-rel column d-flex">
+					<center><div class="avatar"></div></center>
+					<h4 class="commenter">Nurlan, Danial's father </h4>
+					<font>
+						“I'm a testimonial. Click to edit me and add text that says something nice about you and your services.”
+					</font>
+				</div>
+				<div class="slider-content position-rel column d-flex">
+					<center><div class="avatar"></div></center>
+					<h4 class="commenter">Some gorgeous boy</h4>
+					<font>
+						Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam optio, itaque, voluptas quos inventore praesentium quasi molestiae suscipit quo, tenetur blanditiis quidem maiores iusto ex.
+					</font>
+				</div>
+				<div class="slider-content position-rel column d-flex">
+					<center><div class="avatar"></div></center>
+					<h4 class="commenter">Kamabakka</h4>
+					<font>
+						Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum optio laudantium aliquam excepturi magni nostrum?
+					</font>
+				</div>
+			</div>
+		</div>
+		<!-- End of comments -->
+
+		<!--Start of blog section-->
+		<div class="m-50">
+			<center>
+				<p>
+				<h1>С нашего блога</h1>
+				</p>
+			</center>
+
+			<div class="space-around wrap lessons">
+				<!--Single block-->
+
+				<div class="blocks m-50 blocks-lessons" style="min-width:300px; max-width:450px; width:40%;">
+					<img src="img/1.jpg" class="lesson-images">
+					<div class="p-10">
+						<h2>Улучшение произношения</h2><br>
+						<p>
+							<span><a href="#">Английский</a></span>
+							<i class="fa fa-circle"></i>
+							<span><a href="#">советы от лингвистов</a></span>
+						</p><br>
+						<span>В этой части блога мы рассмотрим как улучшить произношение на английском дома.</span>
+					</div>
+				</div>
+
+
+				<!--Single block-->
+
+				<div class="blocks m-50 blocks-lessons a2" style="min-width:300px; max-width:450px; width:40%;">
+					<img src="img/2.jpg" class="lesson-images">
+					<div class="p-10">
+						<h2>Как запоминать слова</h2><br>
+						<p>
+							<span><a href="#">Английский</a></span>
+							<i class="fa fa-circle"></i>
+							<span><a href="#">советы от лингвистов</a></span>
+						</p><br>
+						<span>В этой части блога мы рассмотрим различные способы и приемы запоминания слов на
+							английском.</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--End of blog section-->
+
+		<div class="d-flex wrap journey">
+			<div class="d-flex journey_block" 
+			style="background: url(/img/signup.jpg); background-repeat: no-repeat; background-position: center center;"><a href="/signup.html">Регистрация</a></div>
+			<div class="d-flex journey_block">Начни свое путушествие сейчас</div>
+			<div class="d-flex journey_block" 
+			style="background: 
+			url(/img/blog.jpg); background-repeat: no-repeat; background-position: center center;"><a href="/blog.html">Блог</a></div>
+		</div>
+
+		<div id="footer"></div>
+	</div>
+	<!-- ##### All Javascript Script ##### -->
+	<!-- jQuery-2.2.4 js -->
+	<script src="js/jquery/jquery-2.2.4.min.js"></script>
+	<!-- Active js -->
+	<script src="js/slick.js"></script>
+	<script src="js/slider.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/core.js"></script>
+	<script type="text/javascript">
+		const nav = document.querySelector("nav");
+		$(document).ready(function(){
+			$("nav").removeClass('sticky');
+		});
+		
+		window.addEventListener("scroll", function () {
+			nav.classList.toggle("sticky", window.scrollY > 0);
+		});
+
+		var show = true;
+		$(window).on("scroll", function () {
+			if (!show) return false;
+
+			var wt = $(window).scrollTop();
+			var et = $('.activate').offset().top;
+
+			if (wt >= et) {
+				$('.counter').each(function () {
+					$(this).prop('Counter', 0).animate({
+						Counter: $(this).text()
+					}, {
+						duration: 1500,
+						step: function (now) {
+							$(this).text(Math.ceil(now));
+						}
+					});
+				});
+				show = false;
+			}
+		});
+
+		AOS.init({
+			// Global settings:
+			disable: 'phone', // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+			startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+			initClassName: 'aos-init', // class applied after initialization
+			animatedClassName: 'aos-animate', // class applied on animation
+			useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+			disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+			debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+			throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+			// Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+			offset: 120, // offset (in px) from the original trigger point
+			delay: 0, // values from 0 to 3000, with step 50ms
+			duration: 600, // values from 0 to 3000, with step 50ms
+			easing: 'ease', // default easing for AOS animations
+			once: false, // whether animation should happen only once - while scrolling down
+			mirror: false, // whether elements should animate out while scrolling past them
+			anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+		});
+	</script>
+
+
+</body>
+
+</html>

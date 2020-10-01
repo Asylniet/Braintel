@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- The above 3 meta tags *Must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Braintel | Добро пожаловать!</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.png" />
+
+    <!-- Stylesheet -->
+	 <link rel="stylesheet" href="css/core.css" />
+	 <link rel="stylesheet" href="css/stylo.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+
+    <!--Font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,400&display=swap"
+      rel="stylesheet"
+	 />
+  </head>
+
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="spinner"></div>
+	 </div>
+
+	 <div class="main">
+      
+		
+		<!--Start of welcome-area-->
+			<div class="welcome d-flex wrap">	
+				<div class="d-flex" style="flex-direction: column;">
+					<h1>Добро пожаловать!</h1>
+					<h3>Спасибо, что выбрали нас</h3>
+				</div>
+				<div>
+					<div class="image_human position-rel" id="scene">
+						<img src="/img/human2.png" alt="" class="ness layer" data-depth="-3">
+						<img src="/img/human.png" alt="" class="layer" data-depth="3">
+						<img src="/img/human1.png" alt="" class="layer" data-depth="2">
+					</div>
+				</div>		
+			</div>
+		<!--End of welcome-area-->
+
+		<!--Popup-->
+<div class="popup d-flex">
+	<div class="container_popup position-rel">
+		<div class="close cursor-p">
+			<span></span>
+		</div>	
+		<h2>Подтверждение Email</h2>
+		<h4>
+			Это нужно, чтобы убедиться в существовании вашей почты. 
+			Если вы забудете свой пароль или потеряете доступ к аккаунту, 
+			то именно через почту можно будет восстановаить доступ
+			<br><br>
+			<center>
+				Если вы указали неверный Email
+			</center>
+			<br>
+			<a href="email_valid.html">измените ее</a>
+		</h4>
+	</div>
+</div>
+		<!--End of Popup-->
+
+		<!--Start of validation-area-->
+			<div>
+				<center><p><h1>Процесс регистрации</h1></p></center>
+				<div class="d-flex wrap">
+					<div class="d-flex" style="align-items: flex-start;">
+						<div class="d-flex circles" id="signup_btn">
+							<div class="circle" id="signup">1</div>
+							<center><span>Регистрация</span></center>
+						</div>
+						<div class="d-flex circles" id="email_btn">
+							<div class="circle" id="email">2</div>
+							<center><span>Подтверждение Email</span></center>
+						</div>
+						<div class="d-flex circles">
+							<div class="circle" id="go">3</div>
+						<center><span>Начать</span></center>
+						</div>
+					</div>	
+				</div>
+				<div>
+					<form>
+						<center>
+							<div class="position-rel mw-150">
+								<input type="number" 
+								placeholder="Код" 
+								class="landing-input" 
+								name="code" id="code" 
+								onkeypress="this.value=this.value.substring(0,5);">
+								<div class="fa-question fa cursor-p" title="Зачем нам это?"></div>
+								<a href="account.html" class="fa-long-arrow-right fa go" title="Начать"></a>
+							</div>
+						</center>
+					</form>
+					<center>
+						<div class="d-flex" style="flex-flow: column; flex-direction: column;">
+							<h4>Подтверждение почты</h4>
+							<h3>На ваш Email был отправлен 6 значный код для подтверждения</h3>
+						</div>
+					</center>
+				</div>
+			</div>
+			
+		<!--End of validation-area-->
+
+		<div id="footer"></div>
+	</div>
+
+	<!-- ##### All Javascript Script ##### -->
+	<!-- jQuery-2.2.4 js -->
+	<script src="js/jquery/jquery-2.2.4.min.js"></script>
+
+	<!-- Active js -->
+	<script src="js/main.js"></script>
+	<script src="js/core.js"></script>
+	<script>
+		function parallax(e){
+			this.querySelectorAll('.layer').forEach(layer => {
+				const speed = layer.getAttribute('data-depth');
+				const x = (window.innerWidth - e.pageX*speed)/100
+				const y = (window.innerHeight - e.pageY*speed)/100
+				
+				layer.style.transform = `translateX(${x}px) translateY(${y}px)`
+			});
+		}
+		document.addEventListener("mousemove" , parallax);
+
+		const email = document.getElementById('email');
+		const go = document.getElementById('go');
+		const code = document.getElementById('code');
+		const num = 123456;
+
+		code.addEventListener('input', ()=>{
+			if(code.value.match(num))
+			{
+				email.style.border = "1px solid rgb(21, 182, 7)";
+				go.style.border = "1px solid rgb(21, 182, 7)";
+				$('#signup').append('<style>#signup:after{width:70px;  !important;}</style>');
+				$('#email').append('<style>#email:after{width:52px;  !important;}</style>');
+				$('.go').toggleClass('active');
+				code.style.border = '1px solid rgb(21, 182, 7)';
+			}else
+			{
+				email.style.border = "1px solid rgb(82, 82, 82)";
+				go.style.border = "1px solid rgb(82, 82, 82)";
+				$('#signup').append('<style>#signup:after{width:10px;  !important;}</style>');
+				$('#email').append('<style>#email:after{width:0px;  !important;}</style>');
+				$('.go').removeClass('active');
+				code.style.border = '1px solid red ';
+			}
+		});
+
+		$('.fa-question').click(function(){
+			$('.popup').toggleClass('active');
+		});
+
+		$('.close').click(function(){
+			$('.popup').removeClass('active');
+		});
+	</script>
+    </div>
+  </body>
+</html>

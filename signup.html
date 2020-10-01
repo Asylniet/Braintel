@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- The above 3 meta tags *Must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Braintel | Регистрация</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.png" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+
+    <!--Font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="spinner"></div>
+    </div>
+
+    <div class="main">
+      <div id="header"></div>
+
+      <!--Start of signup-area-->
+      <div
+        class="landing-form"
+        style="max-width: 450px; margin: 50px auto"
+        id="landing-form"
+      >
+        <center>
+          <h1 class="cursor-d">Регистрация</h1>
+          <br />
+          <p id="text">Надежность:</p>
+          <div id="security"></div>
+          <span id="requestText"></span>
+        </center>
+        <form action="#" method="POST" id="form" name="form">
+          <center>
+            <input
+              type="text"
+              name="login"
+              class="landing-input"
+              placeholder="Логин"
+              id="username"
+            />
+            <input
+              type="email"
+              name="email"
+              class="landing-input"
+              placeholder="Email"
+              id="email"
+            /><br />
+            <div class="reset-password">
+              <div style="display: inline-block" class="position-rel">
+                <input
+                  type="password"
+                  name="password"
+                  class="landing-input position-rel"
+                  placeholder="Пароль"
+                  id="password"
+                />
+                <div
+                  class="fa fa-eye"
+                  id="toggle"
+                  style="top: 37px; right: 15px; position: absolute"
+                  onclick="showHide()"
+                ></div>
+              </div>
+
+              <div style="display: inline-block" class="position-rel">
+                <input
+                  type="password"
+                  name="password2"
+                  class="landing-input position-rel"
+                  placeholder="Повторите пароль"
+                  id="password2"
+                />
+                <div
+                  class="fa fa-eye"
+                  id="toggle2"
+                  style="top: 37px; right: 15px; position: absolute"
+                  onclick="showHide2()"
+                ></div>
+              </div>
+            </div>
+            <button
+              type="submit"
+              name="button"
+              class="start login-btn cursor-p"
+              style="width: 80%"
+              id="button"
+              onClick="checkForm()"
+            >
+              Отправить
+            </button>
+          </center>
+        </form>
+        <br />
+        <center>
+          <div class="or cursor-d">
+            <span>или</span>
+          </div>
+          <a href="login.html">Вход</a><br />
+        </center>
+      </div>
+      <center>
+        <img class="letter" src="img/letter.png" width="20%" />
+      </center>
+    </div>
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+
+    <!-- Active js -->
+	 <script src="js/main.js"></script>
+	 <script src="js/core.js"></script>
+    <script src="js/validate.js"></script>
+    <script>
+      $("#button").click(function () {
+        var button = $(this);
+        $(".landing-form").toggleClass("disappear");
+        button.prop("disabled", true);
+        setTimeout(function () {
+          button.prop("disabled", false);
+          window.location.replace("welcome.html");
+        }, 3000);
+        setTimeout(function () {
+          $(".letter").toggleClass("active");
+        }, 1500);
+      });
+    </script>
+  </body>
+</html>

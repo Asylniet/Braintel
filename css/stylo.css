@@ -1,0 +1,605 @@
+@charset "UTF-8";
+@import url(core.css);
+font {
+  font-size: 18px;
+}
+
+.inform {
+  margin: 100px 0;
+}
+
+.lesson-header {
+  padding: 20px;
+  background: -webkit-gradient(linear, left top, right bottom, from(#4a66a8), to(#6588b4));
+  background: linear-gradient(to bottom right, #4a66a8, #6588b4);
+  min-height: 50px;
+  position: relative;
+  color: #fff;
+  margin: 80px 0 0 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.lesson-header .course-info {
+  width: 100%;
+}
+
+.lesson-header .course-info .d-flex.column {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.lesson-header h1 {
+  padding: 0;
+  font-size: 1.8rem;
+  margin: 10px 0;
+}
+
+.a {
+  padding: 10px 10px 10px 30px;
+}
+
+.a a {
+  color: black;
+  opacity: 0.7;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.a a:hover, .a a:focus {
+  opacity: 1;
+}
+
+.back-to-courses {
+  position: relative;
+  padding: 0 0 0 12px;
+  margin: 0 3px;
+}
+
+.back-to-courses::before {
+  content: "<";
+  font-size: 19px;
+  position: absolute;
+  top: 0px;
+  left: 0;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #00000094;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: url(/img/bg4.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.lessons {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  position: relative;
+}
+
+.lessons .summary {
+  top: 80px;
+  position: sticky;
+  position: -webkit-sticky;
+  background: #fff;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 100px 20px 10px 10px;
+  max-height: 400px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  text-align: left;
+  width: 15%;
+  min-width: 200px;
+  margin: 0 50px 0 0;
+}
+
+.lessons .summary .summary-list {
+  width: 100%;
+  padding: 10px 10px 20px 10px;
+  position: relative;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.lessons .summary .summary-list::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 70%;
+  width: 95%;
+  height: 5px;
+  border-radius: 6px;
+  background: #dfdfdf;
+}
+
+.lessons .summary .header-summary {
+  position: relative;
+  font-size: 18px;
+  padding: 5px;
+  margin: 0 0 10px 0;
+}
+
+.lessons .summary .header-summary::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: -10%;
+  width: 130%;
+  height: 1px;
+  background: #a8a8a8;
+}
+
+.summary::-webkit-scrollbar {
+  width: 5px;
+}
+
+.summary::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.summary::-webkit-scrollbar-thumb {
+  background: #c9c9c9;
+}
+
+.lessons-list {
+  max-width: 50%;
+}
+
+.lessons-list .lesson-info {
+  border: 1px solid #ebebeb;
+  padding: 5px;
+  border-radius: 3px;
+  margin: 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.lessons-list .lesson-info font {
+  margin: 30px 0 0 0;
+}
+
+.lessons-list .lesson-info .lesson-info-header {
+  padding: 10px 10px 10px 0;
+  position: relative;
+}
+
+.lessons-list .lesson-info .lesson-info-header::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  width: 99%;
+  height: 1px;
+  left: 0%;
+  background: #ebebeb;
+}
+
+.lessons-list .lesson-info .lesson-info-header a {
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.lessons-list .lesson-info .lesson-info-header a h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.mark {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.lesson-wrapper.fullpage {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  margin: 0;
+  left: 0;
+  z-index: 20;
+  border-radius: 0;
+}
+
+.lesson-wrapper {
+  width: 90%;
+  height: 100%;
+  border: 1px solid #ebebeb;
+  margin: 10px auto;
+  border-radius: 6px;
+  padding: 0;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.lesson-wrapper .lesson-nav {
+  position: relative;
+  list-style: none;
+  width: 50px;
+  background: -webkit-gradient(linear, left top, right bottom, from(#4a66a8), to(#6588b4));
+  background: linear-gradient(to bottom right, #4a66a8, #6588b4);
+  height: 100%;
+  z-index: 1;
+  text-align: center;
+  padding: 15px 0;
+}
+
+.lesson-wrapper .lesson-nav .nav-item.fa-play {
+  font-size: 14px;
+}
+
+.lesson-wrapper .lesson-nav .nav-item.fa-play font {
+  font-size: 16px;
+}
+
+.lesson-wrapper .lesson-nav .nav-item {
+  color: #ffffff;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 5px 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  width: 100%;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.lesson-wrapper .lesson-nav .nav-item:hover {
+  color: black;
+}
+
+.lesson-wrapper .lesson-nav .nav-item.completed {
+  color: #62d85e;
+}
+
+.lesson-wrapper .lesson-nav .arrow-left {
+  position: relative;
+  color: #000;
+}
+
+.lesson-wrapper .lesson-nav .arrow-left::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 8px solid #fff;
+}
+
+.lesson-wrapper .lesson-nav .description,
+.lesson-wrapper .lesson-nav .process {
+  display: none;
+}
+
+.lesson-wrapper .lesson-nav .fa-arrow-right {
+  position: absolute;
+  top: 15px;
+  width: auto;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  color: #ffffff;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+.lesson-wrapper .lesson-nav .fa-arrow-right:hover {
+  background: none;
+  color: #000;
+}
+
+.lesson-wrapper .lesson-nav .fa-long-arrow-right {
+  position: absolute;
+  bottom: 15px;
+  color: #fff;
+}
+
+.lesson-wrapper .lesson-nav .fa-long-arrow-right:hover {
+  color: #000;
+}
+
+.lesson-wrapper .lesson-nav .fa-long-arrow-right a {
+  color: #fff;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  font-family: "Open Sans", sans-serif;
+}
+
+.lesson-wrapper .lesson-nav .fa-long-arrow-right a:hover {
+  color: #000;
+}
+
+.lesson-wrapper .content-area {
+  width: calc(100% - 50px);
+  height: calc(100% - 30px);
+  padding: 30px 10px;
+  background: #fff;
+  font-size: 16px;
+}
+
+.lesson-wrapper .content-area .lesson-content:first-child {
+  display: block;
+}
+
+.lesson-wrapper .content-area .lesson-content {
+  display: none;
+}
+
+.lesson-wrapper .content-area .video-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.lesson-wrapper .content-area .video-wrapper video {
+  width: 100%;
+}
+
+.lesson-wrapper .content-area .expand {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.lesson-wrapper .content-area .expand:hover {
+  -webkit-transform: scale(1.3);
+          transform: scale(1.3);
+}
+
+.lesson-wrapper .content-area .expand.compress {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.lesson-wrapper .content-area .expand.compress:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.lesson-wrapper .lesson-nav.full {
+  width: 200px;
+}
+
+.lesson-wrapper .lesson-nav.full .process {
+  display: block;
+  position: relative;
+  width: 150px;
+  height: 2px;
+  border-radius: 5px;
+  overflow: hidden;
+  background: white;
+  margin: 0 0 15px 0;
+}
+
+.lesson-wrapper .lesson-nav.full .process::after {
+  content: "";
+  background: #62d85e;
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.lesson-wrapper .lesson-nav.full .description {
+  display: inline;
+}
+
+.lesson-wrapper .lesson-nav.full .fa-arrow-right {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
+
+.block_about {
+  min-width: 300px;
+  width: 300px;
+  overflow: hidden;
+  margin: 2px;
+  position: relative;
+  height: 100%;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.block_about .image {
+  width: 100%;
+}
+
+.block_about .image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.block_about:hover .information {
+  top: 0;
+}
+
+.secondary-slider {
+  width: 100%;
+  min-width: 100%;
+}
+
+.secondary-slider .slick-slide {
+  max-width: 100%;
+  width: 100%;
+}
+
+.secondary-slider .slick-slide .d-flex.wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+}
+
+.secondary-slider .d-flex.wrap {
+  margin: 10px;
+}
+
+.secondary-slider .image {
+  width: 10%;
+  min-width: 300px;
+  margin: 0 20px;
+}
+
+.secondary-slider .image img {
+  width: 100%;
+}
+
+.information {
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  background: #313131bb;
+  color: #fff;
+  text-align: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.information font {
+  font-size: 18px;
+  margin: 5px 0;
+  padding: 5px;
+}
+
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* Слайд */
+.slick-slide {
+  max-width: 300px;
+  margin: auto;
+}
+
+/* Слайд основной */
+.slick-slide.slick-current {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slick-dots li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+/* Активная точка */
+.slick-dots li.slick-active button {
+  background: #818181;
+}
+
+/* Элемент точки */
+.slick-dots li button {
+  font-size: 0;
+  width: 10px;
+  height: 10px;
+  background: #d8d8d8;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.crew {
+  padding: 0;
+  min-width: 0;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+
+.crew .image {
+  width: 100%;
+}
+
+.crew .image img {
+  width: 100%;
+}
+
+.crew h1 {
+  margin: 0 0 10px 0;
+}
+
+.crew font {
+  font-size: 18px;
+  margin: 0 0 20px 0;
+  text-align: center;
+  max-width: 40%;
+}
+
+@media (max-width: 630px) {
+  .lesson-header h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 560px) {
+  .lessons .summary {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .lessons-list {
+    max-width: 90%;
+  }
+}
+/*# sourceMappingURL=stylo.css.map */

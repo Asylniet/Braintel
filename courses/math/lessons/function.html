@@ -1,0 +1,220 @@
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- The above 3 meta tags *Must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Braintel | Математика-7</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/img/favicon.png" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/css/stylo.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+
+    <!--Font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <style>
+      .search-area {
+        margin: 10px 0 0 0;
+      }
+      .main {
+        overflow: visible;
+      }
+      #header {
+        position: fixed;
+        top: 0;
+        z-index: 10;
+      }
+    </style>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="spinner"></div>
+    </div>
+
+    <div class="main" id="categories">
+      <div id="header"></div>
+
+      <div class="lesson-header">
+        <h2>Косинусы и синусы</h2>
+      </div>
+      <div class="a">
+        <a href="/courses/math-7.html" class="back-to-courses">
+          Математика 7 класс
+        </a>
+        <a href="/courses/math/trigonometry.html" class="back-to-courses">
+          Тригонометрические функции
+        </a>
+      </div>
+      <div class="lesson-wrapper space-between">
+        <nav class="d-flex column full lesson-nav">
+          <li class="fa fa-arrow-right"></li>
+          <li class="nav-item">25%</li>
+          <div class="process"></div>
+          <li class="nav-item fa fa-play arrow-left" data-target="video1">
+            <font class="description"> Синусы </font>
+          </li>
+          <li class="nav-item fa fa-play" data-target="video2">
+            <font class="description"> Косинусы </font>
+          </li>
+          <li
+            class="nav-item fa fa-graduation-cap click-check"
+            data-target="text1"
+          >
+            <font class="description"> Конспект </font>
+          </li>
+          <li
+            class="nav-item fa fa-graduation-cap click-check"
+            data-target="text2"
+          >
+            <font class="description"> Конспект </font>
+          </li>
+          <li class="nav-item fa fa-pencil-square-o" data-target="test">
+            <font class="description"> Тест </font>
+          </li>
+          <li class="nav-item fa fa-long-arrow-right" title="Следующий урок">
+				 <a href="#" class="description"> 
+					 <font class="description">
+						 Следующий урок
+					 </font>
+				</a>
+          </li>
+        </nav>
+        <div class="content-area">
+          <div class="expand cursor-p">
+            <div class="fa fa-expand"></div>
+          </div>
+
+          <div class="lesson-content active" id="video1">
+            <center><h2>Синусы</h2></center>
+            <div class="video-wrapper">
+              <video controls poster="/img/bg4.jpg">
+                <source src="/Earth.mov" />
+                <source src="/Реклама.mp4" />
+              </video>
+            </div>
+          </div>
+
+          <div class="lesson-content" id="video2">
+            <center><h2>Косинусы</h2></center>
+            <div class="video-wrapper">
+              <video controls poster="/img/bg2.jpg">
+                <source src="/Earth.mov" />
+                <source src="/Реклама.mp4" />
+              </video>
+            </div>
+          </div>
+
+          <div class="lesson-content" id="text1">
+            <center><h2>Конспект1</h2></center>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At eius
+            ratione temporibus nisi officia, rem minima quo expedita
+            exercitationem, provident itaque aliquid! Facilis ut atque beatae
+            inventore ab aut vitae dolorem veniam nam iusto ducimus mollitia
+            aliquid minus reiciendis nostrum, debitis quod odio architecto
+            recusandae deleniti suscipit iste id maiores!
+          </div>
+
+          <div class="lesson-content" id="text2">
+            <center><h2>Конспект2</h2></center>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit
+            provident sint aspernatur. Voluptatum quibusdam nostrum perferendis
+            quo eos recusandae voluptates inventore veritatis laborum vitae,
+            explicabo nisi illum aperiam iste aspernatur placeat officiis culpa.
+            Nihil facilis vero aliquid enim deserunt eligendi itaque est
+            accusantium fugit repellat illum doloremque debitis neque ipsa
+            quisquam rerum, fuga asperiores pariatur nobis adipisci. Facilis
+            dolorum distinctio ratione deleniti consectetur voluptatum et
+            asperiores facere? Labore, minima qui!
+          </div>
+
+          <div class="lesson-content" id="test">
+            <center><h2>Тест</h2></center>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. At eius
+            ratione temporibus nisi officia, rem minima quo expedita
+            exercitationem, provident itaque aliquid! Facilis ut atque beatae
+            inventore ab aut vitae dolorem veniam nam iusto ducimus mollitia
+            aliquid minus reiciendis nostrum, debitis quod odio architecto
+            recusandae deleniti suscipit iste id maiores! Lorem ipsum dolor, sit
+            amet consectetur adipisicing elit. Fugiat voluptatem sapiente odio
+            impedit dolor asperiores, nihil magnam minus tenetur quia! Officia
+            unde doloremque, recusandae dolorum aperiam consequuntur provident
+            nihil eos minus explicabo ipsam eligendi nemo! Architecto
+            voluptatibus odit rem, neque dolorum illum animi iusto eveniet
+            laudantium cupiditate voluptas dignissimos et.
+          </div>
+        </div>
+      </div>
+      <div id="footer"></div>
+    </div>
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="/js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Active js -->
+    <script src="/js/main.js"></script>
+    <script src="/js/core.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".lesson-content").first().slideDown();
+
+        $(".fa-arrow-right").click(function () {
+          $(".lesson-nav").toggleClass("full");
+        });
+
+        var buttonClicked = false;
+
+        $(".nav-item").click(function () {
+          $(".nav-item").removeClass("arrow-left");
+          $(this).addClass("arrow-left").addClass('disable');
+
+          let target = $(this).attr("data-target");
+
+          if ($(".lesson-content.active").find("video").length) {
+            $(".lesson-content.active").find("video").get(0).pause();
+          }
+
+          $(".lesson-content").removeClass("active").slideUp();
+          $("#" + target)
+            .toggleClass("active")
+            .slideDown();
+        });
+
+        $(".click-check").click(function () {
+          $(this).addClass("completed");
+        });
+
+        $("video").on("ended", function () {
+          let completed = $(".lesson-content.active").attr("id");
+          $(".lesson-nav")
+            .find(`[data-target='${completed}']`)
+            .addClass("completed");
+        });
+
+        $(".expand").click(function () {
+          $(this).toggleClass('compress')
+            .children()
+            .toggleClass("fa-expand")
+            .toggleClass("fa-compress");
+          $(".lesson-wrapper").toggleClass("fullpage");
+        });
+
+        $("#test").click(function () {
+          $(".fa-long-arrow-right").slideDown();
+        });
+      });
+    </script>
+  </body>
+</html>

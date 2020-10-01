@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- The above 3 meta tags *Must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Braintel | Вход</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/favicon.png" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+
+    <!--Font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="spinner"></div>
+    </div>
+
+    <div class="main">
+      <div id="header"></div>
+
+      <!--Start of signup-area-->
+     <center>
+		  <div class="landing-form" style="max-width: 450px;">
+			 <center><h1 class="cursor-d">Вход</h1></center>
+			 <form action="#" method="POST" id="form">
+				<center>
+				  <input
+					 type="text"
+					 name="login"
+					 class="landing-input"
+					 required
+					 placeholder="Логин или Email"
+				  />
+				  <div style="display: inline-block" class="position-rel">
+					 <input
+						type="password"
+						name="password"
+						class="landing-input position-rel"
+						required
+						placeholder="Пароль"
+						id="password"
+					 />
+					 <div
+						class="fa fa-eye"
+						id="toggle"
+						style="top: 37px; right: 15px; position: absolute"
+						onclick="showHide()"
+					 ></div>
+				  </div>
+				  <button
+					 type="submit"
+					 name="submit_login"
+					 class="start login-btn cursor-p"
+					 style="width: 80%"
+				  >
+					 Войти
+				  </button>
+				</center>
+			 </form>
+			 <br />
+			 <center>
+				<a href="email_valid.html">Забыли пароль?</a>
+				<div class="or cursor-d">
+				  <span>или</span>
+				</div>
+				<a href="signup.html">Регистрация</a>
+			 </center>
+		  </div>
+	  </center>
+    </div>
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+
+    <!-- Active js -->
+	 <script src="js/main.js"></script>
+	 <script src="js/core.js"></script>
+    <script src="js/validate.js"></script>
+  </body>
+</html>
