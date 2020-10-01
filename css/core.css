@@ -403,7 +403,7 @@ nav.sticky {
 }
 
 .logo {
-  background-image: url(img/logo-passive.png);
+  background: url(img/logo-passive.png);
   width: 30px;
   height: 30px;
   -webkit-transition-duration: 500ms;
@@ -433,7 +433,7 @@ nav.sticky .logo-font {
 }
 
 nav.sticky .logo {
-  background-image: url(img/logo.png);
+  background: url(img/logo.png);
 }
 
 nav.sticky .navigation {
@@ -926,7 +926,7 @@ body.lock {
     flex-direction: column;
   }
   .logo.active {
-    background-image: url(img/logo.png);
+    background: url(img/logo.png);
     z-index: 1;
   }
   .login-area .signup-btn,
