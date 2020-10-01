@@ -5,7 +5,7 @@
   background-image: url(/img/bg1.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  /* background-size: cover; */
   background-position: center center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -781,71 +781,70 @@ input[type="number"] {
   background-repeat: no-repeat;
   background-position: center center;
   background-color: #d5f1ff;
-  margin:80px 0 0 0;
-} 
+  margin: 80px 0 0 0;
+}
 
 .maths h1,
 .maths h3 {
   padding: 0;
   margin: 10px;
-  color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   text-shadow: 5px 5px 15px rgb(0, 0, 0);
 }
 
-.course_container{
-	width: 315px;
-	border: 1px solid #ebebeb;
-	border-radius: 6px;
-	margin: 20px;
-	position: relative;
-	overflow: hidden;
-	min-height: 481px;
+.course_container {
+  width: 315px;
+  border: 1px solid #ebebeb;
+  border-radius: 6px;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  min-height: 481px;
 }
 
-.course_container .img{
-	width: 100%;
+.course_container .img {
+  width: 100%;
 }
 
-.course_container .img img{
-	width: 100%;
-	object-fit: cover;
+.course_container .img img {
+  width: 100%;
+  object-fit: cover;
 }
 
-.course_container font{
-	font-size: 18px;
-	color: #0000009c;
+.course_container font {
+  font-size: 18px;
+  color: #0000009c;
 }
 
 .course_container font .fa.fa-bookmark,
-.course_container font .fa.fa-bookmark-o{
-	cursor: pointer;
-	margin:0 0 0 15px;
+.course_container font .fa.fa-bookmark-o {
+  cursor: pointer;
+  margin: 0 0 0 15px;
 }
 
-.course_container font .fa.fa-bookmark{
-	color:rgb(34, 122, 163);
+.course_container font .fa.fa-bookmark {
+  color: rgb(34, 122, 163);
 }
 
-.course_footer{
-	padding: 15px 10px; 
-	border-top:1px solid #ebebeb; 
-	margin: 30px 0 0 0;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
+.course_footer {
+  padding: 15px 10px;
+  border-top: 1px solid #ebebeb;
+  margin: 30px 0 0 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
-.time{
-	margin: 0 0 10px 0;
-	padding: 10px;
-	font-size: 19px;
-} 
+.time {
+  margin: 0 0 10px 0;
+  padding: 10px;
+  font-size: 19px;
+}
 
-
-.advantage-trust{
-	flex-basis:calc(calc(1360px - 100%) * 999);
-	flex-grow:1;
+.advantage-trust {
+  flex-basis: calc(calc(1360px - 100%) * 999);
+  flex-grow: 1;
 }
 
 .journey {
@@ -858,9 +857,9 @@ input[type="number"] {
   font-size: 18px;
   height: 200px;
   transition: all 0.5s ease;
-  text-align:center;
-  flex-basis:calc(calc(700px - 100%) * 999);
-  padding:10px;
+  text-align: center;
+  flex-basis: calc(calc(700px - 100%) * 999);
+  padding: 10px;
 }
 
 .journey_block:hover {
