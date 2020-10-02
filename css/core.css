@@ -1,7 +1,8 @@
 @charset "UTF-8";
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Raleway:300,400,500,600,700");
-html, body{
+html,
+body {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -50,8 +51,8 @@ font {
 .column {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .m-50 {
@@ -84,7 +85,7 @@ font {
 
 input {
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 a {
@@ -141,7 +142,7 @@ a:focus {
 
 ul {
   -webkit-padding-start: 0px;
-          padding-inline-start: 0px;
+  padding-inline-start: 0px;
   -webkit-padding-inline-start: 0px;
   -o-padding-inline-start: 0px;
   -moz-padding-inline-start: 0px;
@@ -150,8 +151,8 @@ ul {
 /* Preloader */
 #preloader {
   background-color: #f7f7f7;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
@@ -218,8 +219,8 @@ footer {
 
 footer .d-flex {
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   width: 100%;
 }
 
@@ -283,7 +284,7 @@ footer .form {
 .footer-input:hover,
 .footer-input:focus {
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
   outline: none;
 }
 
@@ -517,20 +518,20 @@ nav.sticky .navigation:focus::before {
   transition: all 0.5s ease;
   position: fixed;
   -webkit-transform: translateY(-100%) translateX(20px);
-          transform: translateY(-100%) translateX(20px);
+  transform: translateY(-100%) translateX(20px);
   z-index: 1;
 }
 
 .drop-menu ul {
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   background: #ffffff;
   -webkit-box-shadow: 0 10px 10px rgba(124, 124, 124, 0.349);
-          box-shadow: 0 10px 10px rgba(124, 124, 124, 0.349);
+  box-shadow: 0 10px 10px rgba(124, 124, 124, 0.349);
   border-top: 1px solid #000;
   -webkit-padding-start: 0px;
-          padding-inline-start: 0px;
+  padding-inline-start: 0px;
   -webkit-padding-inline-start: 0px;
   -o-padding-inline-start: 0px;
   -moz-padding-inline-start: 0px;
@@ -551,7 +552,8 @@ nav.sticky .navigation:focus::before {
   z-index: 2;
 }
 
-.drop-menu ul li a:hover::after, .drop-menu ul li a:focus::after {
+.drop-menu ul li a:hover::after,
+.drop-menu ul li a:focus::after {
   content: "";
   position: absolute;
   top: 0;
@@ -566,7 +568,8 @@ nav.sticky .navigation:focus::before {
   padding: 10px 5px 10px 15px;
 }
 
-#course_btn::after, #course_btn::before {
+#course_btn::after,
+#course_btn::before {
   display: none;
 }
 
@@ -577,7 +580,7 @@ nav.sticky .navigation:focus::before {
   padding: 10px 0 0 0;
   opacity: 1;
   -webkit-transform: translateY(0) translateX(20px);
-          transform: translateY(0) translateX(20px);
+  transform: translateY(0) translateX(20px);
   pointer-events: all;
 }
 
@@ -589,18 +592,18 @@ nav.sticky .navigation:focus::before {
   transition: all 0.5s ease;
   position: fixed;
   -webkit-transform: translateY(-100%);
-          transform: translateY(-100%);
+  transform: translateY(-100%);
   z-index: 1;
   width: 128px;
   height: 100%;
   -webkit-box-shadow: 0 10px 50px rgba(124, 124, 124, 0.349);
-          box-shadow: 0 10px 50px rgba(124, 124, 124, 0.349);
+  box-shadow: 0 10px 50px rgba(124, 124, 124, 0.349);
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   display: none;
 }
 
@@ -610,7 +613,7 @@ nav.sticky .navigation:focus::before {
   color: #000;
   opacity: 1;
   -webkit-transform: translateY(-29px);
-          transform: translateY(-29px);
+  transform: translateY(-29px);
   pointer-events: all;
   background: white;
   padding: 1px 0 0 0;
@@ -664,7 +667,7 @@ nav.sticky .navigation:focus::before {
 
 .login-area {
   -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
 }
 
 .btn {
@@ -685,7 +688,7 @@ nav.sticky .navigation:focus::before {
   background-color: #7c68ea;
   background-color: rgba(124, 104, 234, 0.6);
   -webkit-box-sizing: initial;
-          box-sizing: initial;
+  box-sizing: initial;
 }
 
 .login-btn:hover,
@@ -771,10 +774,11 @@ nav.sticky .account:focus {
   font-size: 16px;
 }
 
-.account-control a:hover, .account-control a:focus {
+.account-control a:hover,
+.account-control a:focus {
   background: #e4e4e4;
   -webkit-transform: scale(1.03);
-          transform: scale(1.03);
+  transform: scale(1.03);
 }
 
 body.lock {
@@ -963,16 +967,17 @@ body.lock {
   }
   #course_btn.active::after {
     -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    transform: rotate(-45deg);
   }
   #course_btn.active::before {
     -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+    transform: rotate(45deg);
   }
   #course_btn {
     position: relative;
   }
-  #course_btn::after, #course_btn::before {
+  #course_btn::after,
+  #course_btn::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -988,16 +993,16 @@ body.lock {
   #course_btn::after {
     right: -9px;
     -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+    transform: rotate(45deg);
   }
   #course_btn::before {
     right: -16px;
     -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    transform: rotate(-45deg);
   }
   #course_btn div.position-rel {
     -webkit-transform: translateX(20px);
-            transform: translateX(20px);
+    transform: translateX(20px);
   }
   .nav div ul.d-flex li.position-rel.d-flex {
     padding: 5px;
@@ -1023,15 +1028,15 @@ body.lock {
     display: block;
     margin: -50% 0;
     -webkit-transform: translateX(20px);
-            transform: translateX(20px);
+    transform: translateX(20px);
   }
   .drop-menu ul {
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     background: #ffffff;
     -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
     margin-right: 0;
@@ -1047,7 +1052,8 @@ body.lock {
     position: relative;
     z-index: -1;
   }
-  .drop-menu ul li a:hover::after, .drop-menu ul li a:focus::after {
+  .drop-menu ul li a:hover::after,
+  .drop-menu ul li a:focus::after {
     content: "";
     position: absolute;
     top: 0;
@@ -1071,23 +1077,23 @@ body.lock {
   }
   .nav ul li .drop-menu .drop-ness {
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     display: none;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     position: relative;
     zoom: 1;
     top: 0;
     right: 0;
     -webkit-transform: translate(0);
-            transform: translate(0);
+    transform: translate(0);
     opacity: 1;
     pointer-events: all;
     z-index: 1;
     -webkit-box-shadow: none;
-            box-shadow: none;
+    box-shadow: none;
     border: none;
   }
   .nav ul li .drop-menu .drop-ness a {
@@ -1098,7 +1104,8 @@ body.lock {
     display: inline-block;
     zoom: 1;
   }
-  .nav ul li .drop-menu .drop-ness a::after, .nav ul li .drop-menu .drop-ness a::before {
+  .nav ul li .drop-menu .drop-ness a::after,
+  .nav ul li .drop-menu .drop-ness a::before {
     content: "";
     display: none;
   }
@@ -1129,8 +1136,8 @@ body.lock {
   }
   .account-area {
     -webkit-box-ordinal-group: 0;
-        -ms-flex-order: -1;
-            order: -1;
+    -ms-flex-order: -1;
+    order: -1;
     margin: 0 0 0 10px;
     z-index: 1;
     left: 0;
