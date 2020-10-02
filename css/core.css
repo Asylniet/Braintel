@@ -208,10 +208,11 @@ ul {
 }
 
 /*Header*/
-footer {
+#footer footer {
   background-color: #3b3b3b;
   width: 100%;
   color: white;
+  padding: 50px 0 10px 0;
 }
 
 footer .d-flex {
@@ -219,7 +220,6 @@ footer .d-flex {
   -ms-flex-align: start;
   align-items: flex-start;
   width: 100%;
-  margin: 50px 0 10px 0;
 }
 
 footer .d-flex.column {
