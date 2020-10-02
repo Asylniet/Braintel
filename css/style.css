@@ -4,7 +4,7 @@
 .parallax {
   background-image: url(/img/bg1.jpg);
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
+  background-attachment: fixed;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -884,5 +884,8 @@ input[type="number"] {
 @media (max-width: 630px) {
   .two-columns .d-flex.column {
     width: 80%;
+  }
+  .parallax {
+    background-attachment: none;
   }
 }
