@@ -4,7 +4,7 @@
 .parallax {
   background-image: url(/img/bg1.jpg);
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -848,6 +848,7 @@ input[type="number"] {
 .advantage-trust {
   flex-basis: calc(calc(1360px - 100%) * 999);
   flex-grow: 1;
+  max-width: 690px;
 }
 
 .journey {
