@@ -20,8 +20,8 @@ body {
   overflow-x: hidden;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
-  *{
-	  padding: 0;
+  * {
+    padding: 0;
   }
 }
 
@@ -74,6 +74,10 @@ font {
 
 .cursor-p {
   cursor: pointer;
+}
+
+input {
+  box-shadow: none;
 }
 
 a {
@@ -393,6 +397,7 @@ nav.sticky {
   background-image: url(/img/logo-passive.png);
   width: 30px;
   height: 30px;
+  background-repeat: no-repeat;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   z-index: 1;
@@ -421,6 +426,7 @@ nav.sticky .logo-font {
 
 nav.sticky .logo {
   background-image: url(/img/logo.png);
+  background-repeat: no-repeat;
 }
 
 nav.sticky .navigation {
@@ -749,9 +755,9 @@ body.lock {
   .search {
     width: 150px;
   }
-  .account-area {
-    left: -55px;
-  }
+//   .account-area {
+//     left: -55px;
+//   }
 }
 
 @media (max-width: 992px) {
@@ -894,6 +900,7 @@ body.lock {
   .logo.active {
     background-image: url(/img/logo.png);
     z-index: 1;
+    background-repeat: no-repeat;
   }
   .login-area .signup-btn,
   .logo-font.active {
