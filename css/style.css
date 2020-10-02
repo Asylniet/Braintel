@@ -886,6 +886,6 @@ input[type="number"] {
     width: 80%;
   }
   .parallax {
-    background-attachment: none;
+    background-attachment: scroll;
   }
 }
