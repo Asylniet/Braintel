@@ -11,7 +11,8 @@
     <!-- Favicon -->
     <link rel="icon" href="/img/favicon.png" />
 
-    <!-- Stylesheet -->
+	 <!-- Stylesheet -->
+	 <link rel="stylesheet" href="/css/core.css">
     <link rel="stylesheet" href="/css/stylo.css" />
     <link
       rel="stylesheet"
@@ -166,55 +167,6 @@
     <!-- Active js -->
     <script src="/js/main.js"></script>
     <script src="/js/core.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $(".lesson-content").first().slideDown();
-
-        $(".fa-arrow-right").click(function () {
-          $(".lesson-nav").toggleClass("full");
-        });
-
-        var buttonClicked = false;
-
-        $(".nav-item").click(function () {
-          $(".nav-item").removeClass("arrow-left");
-          $(this).addClass("arrow-left").addClass('disable');
-
-          let target = $(this).attr("data-target");
-
-          if ($(".lesson-content.active").find("video").length) {
-            $(".lesson-content.active").find("video").get(0).pause();
-          }
-
-          $(".lesson-content").removeClass("active").slideUp();
-          $("#" + target)
-            .toggleClass("active")
-            .slideDown();
-        });
-
-        $(".click-check").click(function () {
-          $(this).addClass("completed");
-        });
-
-        $("video").on("ended", function () {
-          let completed = $(".lesson-content.active").attr("id");
-          $(".lesson-nav")
-            .find(`[data-target='${completed}']`)
-            .addClass("completed");
-        });
-
-        $(".expand").click(function () {
-          $(this).toggleClass('compress')
-            .children()
-            .toggleClass("fa-expand")
-            .toggleClass("fa-compress");
-          $(".lesson-wrapper").toggleClass("fullpage");
-        });
-
-        $("#test").click(function () {
-          $(".fa-long-arrow-right").slideDown();
-        });
-      });
-    </script>
+    <script src="/js/lesson.js"></script>
   </body>
 </html>
