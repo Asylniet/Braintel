@@ -10,7 +10,13 @@ font {
 
 .lesson-header {
   padding: 20px;
-  background: -webkit-gradient(linear, left top, right bottom, from(#4a66a8), to(#6588b4));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(#4a66a8),
+    to(#6588b4)
+  );
   background: linear-gradient(to bottom right, #4a66a8, #6588b4);
   min-height: 50px;
   position: relative;
@@ -26,8 +32,8 @@ font {
 
 .lesson-header .course-info .d-flex.column {
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
 }
 
 .lesson-header h1 {
@@ -48,7 +54,8 @@ font {
   position: relative;
 }
 
-.a a:hover, .a a:focus {
+.a a:hover,
+.a a:focus {
   opacity: 1;
 }
 
@@ -79,8 +86,8 @@ font {
 
 .lessons {
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   position: relative;
 }
 
@@ -90,7 +97,7 @@ font {
   position: -webkit-sticky;
   background: #fff;
   -ms-flex-item-align: start;
-      align-self: flex-start;
+  align-self: flex-start;
   padding: 100px 20px 10px 10px;
   max-height: 400px;
   overflow-y: scroll;
@@ -109,7 +116,8 @@ font {
   transition: all 0.3s ease;
 }
 
-.lessons .summary .summary-list::before, .lessons .summary .summary-list::after {
+.lessons .summary .summary-list::before,
+.lessons .summary .summary-list::after {
   content: "";
   position: absolute;
   left: 10px;
@@ -201,7 +209,7 @@ font {
 
 .mark {
   -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  transform: scale(1.05);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -213,7 +221,7 @@ font {
   top: 0;
   margin: 0;
   left: 0;
-  z-index: 20;
+  z-index: 5000;
   border-radius: 0;
 }
 
@@ -234,7 +242,13 @@ font {
   position: relative;
   list-style: none;
   width: 50px;
-  background: -webkit-gradient(linear, left top, right bottom, from(#4a66a8), to(#6588b4));
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(#4a66a8),
+    to(#6588b4)
+  );
   background: linear-gradient(to bottom right, #4a66a8, #6588b4);
   /* height: 100%; */
   z-index: 1;
@@ -281,7 +295,7 @@ font {
   top: 50%;
   right: 0;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   width: 0;
@@ -371,17 +385,17 @@ font {
 
 .lesson-wrapper .content-area .expand:hover {
   -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+  transform: scale(1.3);
 }
 
 .lesson-wrapper .content-area .expand.compress {
   -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .lesson-wrapper .content-area .expand.compress:hover {
   -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 
 .lesson-wrapper .lesson-nav.full {
@@ -415,9 +429,9 @@ font {
 
 .lesson-wrapper .lesson-nav.full .fa-arrow-right {
   -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
   -webkit-transform-origin: center;
-          transform-origin: center;
+  transform-origin: center;
 }
 
 .block_about {
@@ -438,7 +452,7 @@ font {
 .block_about .image img {
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .block_about:hover .information {
@@ -508,11 +522,11 @@ font {
   display: flex;
   height: 100%;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -526,7 +540,7 @@ font {
 /* Слайд основной */
 .slick-slide.slick-current {
   -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  transform: scale(1.05);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -536,11 +550,11 @@ font {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .slick-dots li {
@@ -563,7 +577,7 @@ font {
   border: none;
   outline: none;
   -webkit-transform: scale(0.7);
-          transform: scale(0.7);
+  transform: scale(0.7);
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
