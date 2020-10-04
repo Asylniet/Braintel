@@ -31,9 +31,6 @@
 
   <body>
     <style>
-      .search-area {
-        margin: 10px 0 0 0;
-      }
       .main {
         overflow: visible;
       }
@@ -307,6 +304,150 @@
           </div>
         </div>
       </div>
+
+      <div class="comment">
+        <center>
+          <h2 style="margin: 0">Отзывы</h2>
+        </center>
+        <div
+          class="d-flex wrap"
+          style="align-items: flex-start; margin: 30px 0"
+        >
+          <div class="d-flex column" style="margin: 10px;">
+            <div class="profile d-flex">
+              <i class="fa fa-user"></i>
+            </div>
+            <font> Yakov Vakov </font>
+          </div>
+          <div class="form m-10">
+            <form action="">
+              <textarea name="" id="" placeholder="Оставить отзыв"></textarea
+              ><br />
+              <span class="cursor-p">
+                <i class="fa fa-star grade"></i>
+                <i class="fa fa-star grade"></i>
+                <i class="fa fa-star grade"></i>
+                <i class="fa fa-star grade"></i>
+                <i class="fa fa-star grade"></i>
+              </span>
+              <button type="submit">Отправить</button>
+            </form>
+          </div>
+        </div>
+        <div class="d-flex wrap">
+          <font>
+            <h1>4.8</h1>
+          </font>
+          <div class="d-flex column m-10">
+            <font class="stars">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </font>
+            <font> 3125 отзывов </font>
+          </div>
+        </div>
+
+        <div class="d-flex wrap">
+          <div class="single-comment">
+            <div class="space-between">
+              <div class="d-flex">
+                <div class="avatar"></div>
+                <div class="d-flex column">
+                  <h3>Yakov Vakov</h3>
+                  <h4>15.07.2020</h4>
+                </div>
+              </div>
+              <div>
+                <i class="fa fa-star yellow"></i>
+                <i class="fa fa-star yellow"></i>
+                <i class="fa fa-star yellow"></i>
+                <i class="fa fa-star yellow"></i>
+                <i class="fa fa-star yellow"></i>
+              </div>
+            </div>
+            <font style="width: 80%">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore
+              neque modi velit quibusdam labore, incidunt laudantium dolore
+              harum sit dolor!
+            </font>
+			 </div>
+			 
+			 <div class="single-comment">
+            <div class="space-between">
+              <div class="d-flex">
+                <div class="avatar"></div>
+                <div class="d-flex column">
+                  <h3>Yakov Vakov</h3>
+                  <h4>15.07.2020</h4>
+                </div>
+              </div>
+              <div>
+                <i class="fa fa-star yellow"></i>
+                <i class="fa fa-star yellow"></i>
+                <i class="fa fa-star yellow"></i>
+                <i class="fa fa-star yellow"></i>
+                <i class="fa fa-star yellow"></i>
+              </div>
+            </div>
+            <font style="width: 80%">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore
+              neque modi velit quibusdam labore, incidunt laudantium dolore
+              harum sit dolor!
+            </font>
+			 </div>
+			 
+			 <div class="single-comment">
+            <div class="space-between">
+              <div class="d-flex">
+                <div class="avatar"></div>
+                <div class="d-flex column">
+                  <h3>Yakov Vakov</h3>
+                  <h4>15.07.2020</h4>
+                </div>
+              </div>
+              <div>
+                <i class="fa fa-star yellow"></i>
+                <i class="fa fa-star yellow"></i>
+                <i class="fa fa-star yellow"></i>
+                <i class="fa fa-star yellow"></i>
+                <i class="fa fa-star yellow"></i>
+              </div>
+            </div>
+            <font style="width: 80%">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore
+              neque modi velit quibusdam labore, incidunt laudantium dolore
+              harum sit dolor!
+            </font>
+			 </div>
+			 
+			 <div class="single-comment">
+            <div class="space-between">
+              <div class="d-flex">
+                <div class="avatar"></div>
+                <div class="d-flex column">
+                  <h3>Yakov Vakov</h3>
+                  <h4>15.07.2020</h4>
+                </div>
+              </div>
+              <div>
+                <i class="fa fa-star yellow"></i>
+                <i class="fa fa-star yellow"></i>
+                <i class="fa fa-star yellow"></i>
+                <i class="fa fa-star yellow"></i>
+                <i class="fa fa-star yellow"></i>
+              </div>
+            </div>
+            <font style="width: 80%">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore
+              neque modi velit quibusdam labore, incidunt laudantium dolore
+              harum sit dolor!
+            </font>
+          </div>
+        </div>
+      </div>
       <div id="footer"></div>
     </div>
 
@@ -323,6 +464,28 @@
           setTimeout(function () {
             $(block).removeClass("mark");
           }, 1500);
+        });
+
+        var show = true;
+
+        $(".grade").on("mouseover", function () {
+          if (show === true) {
+            $(this).prevAll().addClass("yellow");
+            $(this).addClass("yellow");
+          }
+        });
+
+        $(".grade").on("mouseleave", function () {
+          if (show === true) {
+            $(".grade").removeClass("yellow");
+          }
+        });
+
+        $(".grade").click(function () {
+          $(this).prevAll().addClass("yellow");
+          $(this).nextAll().removeClass("yellow");
+          $(this).addClass("yellow");
+          show = false;
         });
       });
     </script>

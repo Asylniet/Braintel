@@ -422,26 +422,26 @@
 			});
 
 			var show = true;
-		$("body").on("scroll", function () {
-			if (!show) return false;
+			$("body").on("scroll", function () {
+				if (!show) return false;
 
-			var wt = $("body").scrollTop();
-			var et = $('.activate').offset().top;
+				var wt = $("body").scrollTop();
+				var et = $('.activate').offset().top;
 
-			if (wt >= et) {
-				$('.counter').each(function () {
-					$(this).prop('Counter', 0).animate({
-						Counter: $(this).text()
-					}, {
-						duration: 1500,
-						step: function (now) {
-							$(this).text(Math.ceil(now));
-						}
+				if (wt >= et) {
+					$('.counter').each(function () {
+						$(this).prop('Counter', 0).animate({
+							Counter: $(this).text()
+						}, {
+							duration: 1500,
+							step: function (now) {
+								$(this).text(Math.ceil(now));
+							}
+						});
 					});
-				});
-				show = false;
-			}
-		});
+					show = false;
+				}
+			});
 		});
 	</script>
 

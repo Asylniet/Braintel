@@ -10,13 +10,7 @@ font {
 
 .lesson-header {
   padding: 20px;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right bottom,
-    from(#4a66a8),
-    to(#6588b4)
-  );
+  background: -webkit-gradient(linear, left top, right bottom, from(#4a66a8), to(#6588b4));
   background: linear-gradient(to bottom right, #4a66a8, #6588b4);
   min-height: 50px;
   position: relative;
@@ -32,8 +26,8 @@ font {
 
 .lesson-header .course-info .d-flex.column {
   -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .lesson-header h1 {
@@ -54,8 +48,7 @@ font {
   position: relative;
 }
 
-.a a:hover,
-.a a:focus {
+.a a:hover, .a a:focus {
   opacity: 1;
 }
 
@@ -86,8 +79,8 @@ font {
 
 .lessons {
   -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   position: relative;
 }
 
@@ -97,7 +90,7 @@ font {
   position: -webkit-sticky;
   background: #fff;
   -ms-flex-item-align: start;
-  align-self: flex-start;
+      align-self: flex-start;
   padding: 100px 20px 10px 10px;
   max-height: 400px;
   overflow-y: scroll;
@@ -116,8 +109,7 @@ font {
   transition: all 0.3s ease;
 }
 
-.lessons .summary .summary-list::before,
-.lessons .summary .summary-list::after {
+.lessons .summary .summary-list::before, .lessons .summary .summary-list::after {
   content: "";
   position: absolute;
   left: 10px;
@@ -209,7 +201,7 @@ font {
 
 .mark {
   -webkit-transform: scale(1.05);
-  transform: scale(1.05);
+          transform: scale(1.05);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -221,7 +213,7 @@ font {
   top: 0;
   margin: 0;
   left: 0;
-  z-index: 5000;
+  z-index: 20;
   border-radius: 0;
 }
 
@@ -234,23 +226,15 @@ font {
   padding: 0;
   position: relative;
   overflow-y: hidden;
-  display: flex;
-  align-items: stretch;
 }
 
 .lesson-wrapper .lesson-nav {
   position: relative;
   list-style: none;
   width: 50px;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    right bottom,
-    from(#4a66a8),
-    to(#6588b4)
-  );
+  background: -webkit-gradient(linear, left top, right bottom, from(#4a66a8), to(#6588b4));
   background: linear-gradient(to bottom right, #4a66a8, #6588b4);
-  /* height: 100%; */
+  height: 100%;
   z-index: 1;
   text-align: center;
   padding: 15px 0;
@@ -295,7 +279,7 @@ font {
   top: 50%;
   right: 0;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+          transform: translateY(-50%);
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
   width: 0;
@@ -351,7 +335,6 @@ font {
 
 .lesson-wrapper .content-area {
   width: calc(100% - 50px);
-  min-height: 500px;
   height: calc(100% - 30px);
   padding: 30px 10px;
   background: #fff;
@@ -385,17 +368,17 @@ font {
 
 .lesson-wrapper .content-area .expand:hover {
   -webkit-transform: scale(1.3);
-  transform: scale(1.3);
+          transform: scale(1.3);
 }
 
 .lesson-wrapper .content-area .expand.compress {
   -webkit-transform: scale(1.2);
-  transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .lesson-wrapper .content-area .expand.compress:hover {
   -webkit-transform: scale(1);
-  transform: scale(1);
+          transform: scale(1);
 }
 
 .lesson-wrapper .lesson-nav.full {
@@ -429,9 +412,104 @@ font {
 
 .lesson-wrapper .lesson-nav.full .fa-arrow-right {
   -webkit-transform: rotate(180deg);
-  transform: rotate(180deg);
+          transform: rotate(180deg);
   -webkit-transform-origin: center;
-  transform-origin: center;
+          transform-origin: center;
+}
+
+.comment{
+	width: 100%;
+	margin: 30px 0 0 0;
+	padding: 10px;
+}
+
+.comment .form{
+	width: 30%;
+	margin: 0;
+	min-width: 300px;
+}
+
+.comment .form form{
+	width: 100%;
+}
+
+.comment .form form textarea{
+	max-width: 100%;
+	min-width: 300px;
+	width: 100%;
+	box-shadow: none;
+	min-height: 60px;
+	height: 60px;
+	max-block-size: 200px;
+	resize: vertical;
+	padding: 10px;
+	font-size: 18px;
+	border-radius: 6px;
+	border: 1px solid #ebebeb;
+	transition: all 0.3s ease;
+}
+
+.comment .form form textarea:focus,
+.comment .form form textarea:hover{
+	border: 1px solid #000;
+	outline: none;
+}
+
+.comment .form form button{
+	color: #000;
+	border: 1px solid rgb(48, 48, 48);
+	border-radius: 3px;
+	transition: all 0.3s ease;
+	padding: 5px;
+}
+
+.comment .form form button:focus,
+.comment .form form button:hover{
+	transform: scale(1.03);
+}
+
+.grade{
+	font-size: 18px;
+	cursor: pointer;
+	color: #ebebeb;
+}
+
+.grade.yellow,
+.fa-star.yellow,
+.stars .fa-star{
+	color: rgb(231, 198, 10);
+}
+
+.profile{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	position: relative;
+	background: #ebebeb;
+}
+
+.profile .fa-user{
+	color: #9e9e9e;
+	font-size: 30px;
+}
+
+.single-comment{
+	width: 50%;
+	margin: 10px auto;
+	padding: 10px;
+	border: 1px solid #ebebeb;
+	border-radius: 6px;
+	min-width: 290px;
+}
+
+.single-comment .d-flex h3,
+.single-comment .d-flex h4{
+	margin: 0;
+	padding: 0;
+}
+
+.single-comment .space-between{
+	margin: 0 0 20px 0;
 }
 
 .block_about {
@@ -452,7 +530,7 @@ font {
 .block_about .image img {
   width: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .block_about:hover .information {
@@ -522,11 +600,11 @@ font {
   display: flex;
   height: 100%;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -540,7 +618,7 @@ font {
 /* Слайд основной */
 .slick-slide.slick-current {
   -webkit-transform: scale(1.05);
-  transform: scale(1.05);
+          transform: scale(1.05);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -550,11 +628,11 @@ font {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .slick-dots li {
@@ -577,7 +655,7 @@ font {
   border: none;
   outline: none;
   -webkit-transform: scale(0.7);
-  transform: scale(0.7);
+          transform: scale(0.7);
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
