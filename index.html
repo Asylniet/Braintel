@@ -411,8 +411,8 @@
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$("nav").removeClass('sticky');
-			$("body").on("scroll", function(){
-				if($("body").scrollTop() > 1)
+			$(window).on("scroll", function(){
+				if($(window).scrollTop() > 1)
 				{
 					$("nav").addClass("sticky");
 				}else
@@ -422,10 +422,10 @@
 			});
 
 			var show = true;
-			$("body").on("scroll", function () {
+			$(window).on("scroll", function () {
 				if (!show) return false;
 
-				var wt = $("body").scrollTop();
+				var wt = $(window).scrollTop();
 				var et = $('.activate').offset().top;
 
 				if (wt >= et) {
