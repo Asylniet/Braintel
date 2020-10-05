@@ -219,6 +219,7 @@ font {
 
 .lesson-wrapper {
   width: 90%;
+  min-height: 600px;
   height: 100%;
   border: 1px solid #ebebeb;
   margin: 10px auto;
