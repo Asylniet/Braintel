@@ -885,7 +885,10 @@ input[type="number"] {
   .two-columns .d-flex.column {
     width: 80%;
   }
-  .parallax {
-    background-attachment: scroll;
-  }
 }
+
+@media (max-width: 1000px) {
+	.parallax {
+	  background-attachment: scroll;
+	}
+ }
