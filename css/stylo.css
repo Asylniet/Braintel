@@ -473,6 +473,11 @@ font {
 	font-size: 18px;
 	cursor: pointer;
 	color: #ebebeb;
+	transition: all 0.3s ease;
+}
+
+.grade:hover{
+	font-size: 22px;
 }
 
 .grade.yellow,
