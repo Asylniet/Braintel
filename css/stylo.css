@@ -694,6 +694,42 @@ font {
   max-width: 40%;
 }
 
+.start {
+	color: white;
+	padding: 5px 40px;
+	font-size: 20px;
+	-webkit-transition-duration: 500ms;
+	transition-duration: 500ms;
+	border-radius: 6px;
+	background-color: rgba(7108, 118, 236);
+	background-color: rgb(108, 118, 236);
+	border: none;
+	outline: none;
+ }
+ 
+ .start:hover,
+ .start:focus {
+	color: white;
+	background-color: rgba(27, 40, 193);
+	background-color: rgb(27, 40, 193);
+}
+
+ .finish{
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.445);
+ }
+
+ .finish .content{
+	 width: 300px;
+	 height: 100px;
+	 background: #fff;
+	 border-radius: 6px;
+ }
+
 @media (max-width: 630px) {
   .lesson-header h1 {
     font-size: 1.6rem;
