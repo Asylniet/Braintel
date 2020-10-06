@@ -719,6 +719,7 @@ font {
 	height: 100vh;
 	position: fixed;
 	top: -100%;
+	transform: translateY(-100%);
 	left: 0;
 	background: rgba(0, 0, 0, 0.616);
 	z-index: 5000;
@@ -734,6 +735,7 @@ font {
 
  .finish.active{
 	 top: 0;
+	 transform: translateY(0);
  }
 
  .finish .content{
