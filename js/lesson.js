@@ -44,4 +44,32 @@ $(document).ready(function () {
   $("#test").click(function () {
     $(".fa-long-arrow-right").slideDown();
   });
+
+  const circle = $(".progress-ring-circle");
+  const radius = circle.attr("r");
+  const circumference = 2 * Math.PI * radius;
+  const percentage = $('.percent').attr("data-target");
+
+  circle.css("stroke-dasharray", `${circumference} ${circumference}`);
+  circle.css("stroke-dashoffset", circumference)
+
+  function setProgress(percent){
+	  const offset = circumference - percent / 100 * circumference;
+	  circle.css('stroke-dashoffset', offset);
+  }
+
+  $('#test-form').submit(function(e){
+	$('.finish').addClass('active');
+	$('body').addClass('lock');
+	e.preventDefault();
+	setTimeout(function(){
+		setProgress(percentage);
+	}, 700);
+  });
+
+  $('.fa-times').click(function(){
+	  $('.finish').removeClass('active');
+		$('body').removeClass('lock');
+		setProgress(0);
+  })
 });
