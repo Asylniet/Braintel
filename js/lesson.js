@@ -61,6 +61,7 @@ $(document).ready(function () {
   $('#test-form').submit(function(e){
 	$('.finish').addClass('active');
 	$('body').addClass('lock');
+	$('.nav-item[data-target="test"]').addClass('completed');
 	e.preventDefault();
 	setTimeout(function(){
 		setProgress(percentage);
