@@ -67,7 +67,7 @@ $(document).ready(function () {
 	}, 700);
   });
 
-  $('.fa-times').click(function(){
+  $('.close').click(function(){
 	  $('.finish').removeClass('active');
 		$('body').removeClass('lock');
 		setProgress(0);
