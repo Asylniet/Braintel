@@ -58,7 +58,7 @@ font {
 }
 
 .m-80 {
-  margin: 80px 0;
+  margin: 80px 0 0 0;
 }
 
 .m-10 {
@@ -354,6 +354,11 @@ footer .form {
 .fa-vk:hover,
 .fa-vk:focus {
   color: #001f89;
+}
+
+.fa-whatsapp:hover,
+.fa-whatsapp:focus {
+  color: #19c945;
 }
 
 /*Navbar*/
