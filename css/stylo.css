@@ -585,8 +585,7 @@ a.opacity {
 }
 
 .likes.liked,
-.like-reply .fa-heart.liked,
-.like-reply .fa-heart:hover{
+.like-reply .fa-heart.liked{
 	color: rgb(221, 60, 60);
 }
 
