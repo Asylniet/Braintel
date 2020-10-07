@@ -46,6 +46,7 @@ $(document).ready(function () {
 		setTimeout(function(){
 			show = true;
 		}, 500);
+		return false;
 	});
 
 	$(document).click(function(event) {
