@@ -546,7 +546,6 @@
 		  $('.fa-heart').mouseenter(function(){
 			  if($(this).hasClass("liked"))
 			  {
-
 			  }else
 			  {
 				$(this).css("color", "rgb(221, 60, 60)");
@@ -577,8 +576,8 @@
               .next()
 				  .text(--likes);
 				  setTimeout(function(){
-					$(this).trigger("mouseleave");
-				  }, 500);
+					that.attr("style", "");
+				  }, 5);
           } else {
             $(this)
               .next()
