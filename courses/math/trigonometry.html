@@ -543,6 +543,24 @@
           $(this).addClass("yellow");
           show = false;
         });
+		  $('.fa-heart').mouseenter(function(){
+			  if($(this).hasClass("liked"))
+			  {
+
+			  }else
+			  {
+				$(this).css("color", "rgb(221, 60, 60)");
+			  }
+		  });
+
+		  $(".fa-heart").mouseleave(function(){
+			  if($(this).hasClass("liked"))
+			  {
+			  }else
+			  {
+				$(this).css("color", "#ebebeb");
+			  }
+		  });
 
         $(".fa-heart").click(function () {
           $(this).toggleClass("liked").next().toggleClass("liked");
@@ -552,13 +570,15 @@
           const that = $(this);
           setTimeout(function () {
             that.removeClass("big");
-            console.log($(this));
           }, 300);
           var clicks = $(this).data("clicks");
           if (clicks) {
-            $(this).css("color", "#ebebeb")
+            $(this)
               .next()
-              .text(--likes);
+				  .text(--likes);
+				  setTimeout(function(){
+					$(this).trigger("mouseleave");
+				  }, 500);
           } else {
             $(this)
               .next()
@@ -566,17 +586,6 @@
           }
           $(this).data("clicks", !clicks);
         });
-		  $('.fa-heart').mouseover(function(){
-			$(this).css("color", "rgb(221, 60, 60)");
-		  });
-		  $(".fa-heart").mouseleave(function(){
-			  if($(this).hasClass("liked"))
-			  {
-			  }else
-			  {
-				$(this).css("color", "#ebebeb");
-			  }
-		  });
       });
     </script>
   </body>
