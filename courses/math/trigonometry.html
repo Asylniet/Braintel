@@ -559,7 +559,6 @@
             $(this)
               .next()
               .text(--likes);
-				  $(this).removeClass("liked").next().removeClass("liked");
           } else {
             $(this)
               .next()
@@ -568,10 +567,15 @@
           $(this).data("clicks", !clicks);
         });
 		  $('.fa-heart').mouseover(function(){
-			$(this).addClass("liked");
+			$(this).css("color", "rgb(221, 60, 60)");
 		  });
 		  $(".fa-heart").mouseleave(function(){
-			$(this).removeClass("liked");
+			  if($(this).hasClass("liked"))
+			  {
+			  }else
+			  {
+				$(this).css("color", "#ebebeb");
+			  }
 		  });
       });
     </script>
