@@ -551,6 +551,7 @@ a.opacity {
 
 .single-comment .single-comment{
 	width:90%;
+	min-width: 270px;
 }
 
 .single-comment .d-flex h3,
