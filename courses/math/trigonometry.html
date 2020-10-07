@@ -567,6 +567,12 @@
           }
           $(this).data("clicks", !clicks);
         });
+		  $('.fa-heart').mouseover(function(){
+			$(this).addClass("liked");
+		  });
+		  $(".fa-heart").mouseleave(function(){
+			$(this).removeClass("liked");
+		  });
       });
     </script>
   </body>
