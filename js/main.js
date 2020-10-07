@@ -40,9 +40,32 @@ $(document).ready(function () {
 		});
 	}
 
+	var show = false;
 	$('.account').on('click', function(){
 		$('.account-control').slideToggle(300);
+		setTimeout(function(){
+			show = true;
+		}, 500);
 	});
+
+	$(document).click(function(event) {
+		if(show == true)
+		{
+			var $target = $(event.target);
+			if(!$target.closest('.account-control').length && 
+			$('.account-control').is(":visible")) {
+				$('.account-control').slideUp();
+			}  
+			show = false;      
+		} 
+	});
+
+	// $(window).click(function(){
+	// 	if($(".account-control").length)
+	// 	{
+	// 		$('.account-control').slideUp(300);
+	// 	}
+	// });
 
   $(document).on("click", 'a[href^="#"]', function (event) {
     event.preventDefault();
