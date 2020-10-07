@@ -48,22 +48,19 @@
     <div class="main" id="categories">
 		<div id="header"></div>
 		
-		<div class="a m-80">
-			<a href="/courses/math-7.html" class="back-to-courses">
-			  Математика 7 класс
-			</a>
-		 </div>
-
-      <div class="lesson-header">
+		<!-- <div class="a m-80">
+				<a href="/courses/math-7.html" class="back-to-courses opacity">
+				  Математика 7 класс
+				</a>
+		 </div> -->
+      <div class="lesson-header" style="margin-top: 120px;">
         <div class="course-info space-around wrap">
           <div
-            class="d-flex column"
-            style="
-              max-width: 400px;
-              width: 50%;
-              min-width: 300px;
-              text-align: left;
-            "
+				class="d-flex column position-rel"
+				style="max-width: 400px;
+				width: 50%;
+				min-width: 300px;
+				text-align: left;;"
           >
             <h1>Тригонометрические функции</h1>
             <font>
@@ -71,7 +68,10 @@
               quis quaerat in magnam necessitatibus, reiciendis autem libero
               dicta odit repudiandae tenetur eos, deleniti sequi dolores error
               doloribus, hic modi labore.
-            </font>
+				</font>
+				<a href="/courses/math-7.html" class="back-to-courses absolute">
+					Математика 7 класс
+				 </a>
           </div>
           <div class="d-flex column">
             <div class="d-flex" style="margin: 10px 0">
@@ -97,8 +97,8 @@
             <div style="margin: 10px 0">
               <div class="fa fa-calendar"></div>
               <font> 20.09.2020 </font>
-            </div>
-          </div>
+				</div>
+			 </div>
         </div>
       </div>
 
@@ -322,7 +322,7 @@
           </div>
           <div class="form">
             <form action="">
-              <textarea name="" id="" placeholder="Оставить отзыв" required></textarea
+              <textarea name="" id="" placeholder="Ваш комментарий" required></textarea
               ><br />
               <span class="cursor-p">
                 <i class="fa fa-star grade"></i>
@@ -372,8 +372,13 @@
             <font style="width: 80%">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore
               neque modi velit quibusdam labore, incidunt laudantium dolore
-              harum sit dolor!
-            </font>
+              harum sit dolor! Lorem,
+				</font>
+				<div class="like-reply">
+					<i class="fa fa-heart"></i>
+					<font class="likes">15</font>
+					<i class="fa fa-reply"></i>
+				</div>
           </div>
 
           <div class="single-comment">
@@ -396,8 +401,14 @@
             <font style="width: 80%">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore
               neque modi velit quibusdam labore, incidunt laudantium dolore
-              harum sit dolor!
-            </font>
+              harum sit dolor! Lorem,
+				</font>
+				<div class="like-reply">
+					<i class="fa fa-heart">
+					</i>
+					<font class="likes">5</font>
+					<i class="fa fa-reply"></i>
+				</div>
           </div>
 
           <div class="single-comment">
@@ -420,8 +431,13 @@
             <font style="width: 80%">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore
               neque modi velit quibusdam labore, incidunt laudantium dolore
-              harum sit dolor!
-            </font>
+              harum sit dolor! Lorem,
+				</font>
+				<div class="like-reply">
+					<i class="fa fa-heart"></i>
+					<font class="likes">120</font>
+					<i class="fa fa-reply"></i>
+				</div>
           </div>
 
           <div class="single-comment">
@@ -444,8 +460,41 @@
             <font style="width: 80%">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore
               neque modi velit quibusdam labore, incidunt laudantium dolore
-              harum sit dolor!
-            </font>
+              harum sit dolor! Lorem,
+				</font>
+				<div class="like-reply">
+					<i class="fa fa-heart"></i>
+					<font class="likes">28</font>
+					<i class="fa fa-reply"></i>
+				</div>
+				<div class="single-comment">
+					<div class="space-between">
+					  <div class="d-flex">
+						 <div class="avatar"></div>
+						 <div class="d-flex column">
+							<h3>Yakov Vakov</h3>
+							<h4>15.07.2020</h4>
+						 </div>
+					  </div>
+					  <div>
+						 <i class="fa fa-star yellow"></i>
+						 <i class="fa fa-star yellow"></i>
+						 <i class="fa fa-star yellow"></i>
+						 <i class="fa fa-star yellow"></i>
+						 <i class="fa fa-star yellow"></i>
+					  </div>
+					</div>
+					<font style="width: 80%">
+					  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempore
+					  neque modi velit quibusdam labore, incidunt laudantium dolore
+					  harum sit dolor! Lorem,
+					</font>
+					<div class="like-reply">
+						<i class="fa fa-heart"></i>
+						<font class="likes">46</font>
+						<i class="fa fa-reply"></i>
+					</div>
+				 </div>
           </div>
         </div>
       </div>
@@ -488,6 +537,25 @@
           $(this).addClass("yellow");
           show = false;
         });
+
+		  $(".fa-heart").click(function(){
+			$(this).toggleClass('liked').next().toggleClass('liked');
+			$(this).toggleClass('big');
+			var likes = $(this).next().html();
+			likes = +likes;
+			const that = $(this);
+			setTimeout(function() {
+				that.removeClass('big');
+				console.log($(this));
+			}, 300);
+			var clicks = $(this).data('clicks');
+			if (clicks) {
+				$(this).next().text(--likes);
+			} else {
+				$(this).next().text(++likes);
+			}
+			$(this).data("clicks", !clicks);
+		  });
       });
     </script>
   </body>
