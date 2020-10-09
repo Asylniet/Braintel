@@ -58,7 +58,7 @@ const btn = document.getElementById('button');
 		
 		
 password.addEventListener('input', ()=>{
-	const text = document.getElementById('requestText');
+	var text = $("#password").parent().parent().parent().parent().find("#requestText");
 	const passPattern =   /(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}/;
 	password2.classList.remove('invalid');
 	password2.classList.remove('valid');
@@ -71,7 +71,7 @@ password.addEventListener('input', ()=>{
 			secure.classList.add('low');
 			secure.classList.remove('normal');
 			secure.classList.remove('valid');
-			text.innerHTML="";
+			text.html("");
 			text_s.classList.add('low');
 			text_s.classList.remove('good');
 			text_s.classList.remove('normal');
@@ -82,7 +82,7 @@ password.addEventListener('input', ()=>{
 			password.classList.remove('invalid');
 			secure.classList.add('normal');
 			secure.classList.remove('low');
-			text.innerHTML="";
+			text.html("");
 			text_s.classList.add('normal');
 			text_s.classList.remove('low');
 			btn. disabled  = false;
@@ -95,7 +95,7 @@ password.addEventListener('input', ()=>{
 				secure.classList.add('valid');
 				secure.classList.remove('low');
 				secure.classList.remove('normal');
-				text.innerHTML="";
+				text.html("");
 				text_s.classList.add('good');
 				text_s.classList.remove('low');
 				text_s.classList.remove('normal');
@@ -106,8 +106,8 @@ password.addEventListener('input', ()=>{
 						password.classList.add('invalid');
 						password.classList.remove('valid');
 						secure.classList.remove('low');
-						text.style.color = "red";
-						text.innerHTML = "Пароль должен быть в районе 6-20 символов и <br> содержать 1 букву [a-z] | [A-Z] | цифру";
+						text.css("color", "red");
+						text.html("Пароль должен быть в районе 6-20 символов и <br> содержать 1 букву [a-z] | [A-Z] | цифру");
 						password.classList.remove('valid_normal');
 						password.classList.remove('valid_low');
 						secure.classList.remove('valid');
@@ -127,7 +127,7 @@ password.addEventListener('input', ()=>{
 						secure.classList.add('valid');
 						secure.classList.remove('low');
 						secure.classList.remove('normal');
-						text.innerHTML="";
+						text.html("");
 						text_s.classList.add('good');
 						text_s.classList.remove('low');
 						text_s.classList.remove('normal');	
@@ -142,7 +142,7 @@ password.addEventListener('input', ()=>{
 				secure.classList.remove('valid');
 				secure.classList.remove('low');
 				secure.classList.add('normal');
-				text.innerHTML="";
+				text.html("");
 				text_s.classList.remove('good');
 				text_s.classList.remove('low');
 				text_s.classList.add('normal');
@@ -156,7 +156,7 @@ password.addEventListener('input', ()=>{
 			secure.classList.remove('normal');
 			secure.classList.add('low');
 			secure.classList.remove('valid');
-			text.innerHTML="";
+			text.html("");
 			text_s.classList.remove('normal');
 			text_s.classList.add('low');
 			btn. disabled  = false;
@@ -166,8 +166,8 @@ password.addEventListener('input', ()=>{
 		password.classList.add('invalid');
 		password.classList.remove('valid');
 		secure.classList.remove('low');
-		text.style.color = "red";
-		text.innerHTML = "Пароль должен быть в районе 6-20 символов и <br> содержать 1 букву [a-z] | [A-Z] | цифру";
+		text.css("color", "red");
+		text.html("Пароль должен быть в районе 6-20 символов и <br> содержать 1 букву [a-z] | [A-Z] | цифру");
 		password.classList.remove('valid_low');
 		password.classList.remove('valid_normal');
 		secure.classList.remove('normal');
@@ -200,7 +200,7 @@ password.addEventListener('input', ()=>{
 });
 
 password2.addEventListener('input', ()=>{
-	const text = document.getElementById('requestText');
+	var text = $("#password").parent().parent().parent().parent().find("#requestText");
 			secure.classList.remove('low');
 			secure.classList.remove('normal');
 			secure.classList.remove('valid');
@@ -211,14 +211,14 @@ password2.addEventListener('input', ()=>{
 		{
 			password2.classList.add('valid');
 			password2.classList.remove('invalid');
-			text.innerHTML="";
+			text.html("");
 			btn. disabled  = false;
 		}else
 		{
 			password2.classList.add('invalid');
 			password2.classList.remove('valid');
-			text.innerHTML = "Пароли не совпадают";
-			text.style.color = "red";
+			text.html("Пароли не совпадают");
+			text.css("color","red");
 			btn. disabled  = true;
 		}
 		if(password.value.length < 1)
@@ -242,7 +242,7 @@ password2.addEventListener('input', ()=>{
 });
 
 email.addEventListener('input', ()=>{
-	const text = document.getElementById('requestText');
+	const text = $("#email").parent().parent().find("#requestText");
 	const emailPattern =  /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$/;
 			secure.classList.remove('low');
 			secure.classList.remove('normal');
@@ -255,15 +255,15 @@ email.addEventListener('input', ()=>{
 	{
 		email.classList.add('valid');
 		email.classList.remove('invalid');
-		text.innerHTML="";
+		text.html("");
 		btn. disabled  = false;
 		
 	}else
 	{
 		email.classList.add('invalid');
 		email.classList.remove('valid');
-		text.innerHTML = "Введите правильный Email";
-		text.style.color = "red";
+		text.html("Введите правильный Email")
+		text.css("color","red");
 		btn. disabled  = true;
 	}
 	if(password.value.length < 1)
@@ -287,7 +287,7 @@ email.addEventListener('input', ()=>{
 });
 
 username.addEventListener('input', ()=>{
-	const text = document.getElementById('requestText');
+	const text = $("#username").parent().parent().find("#requestText");
 			secure.classList.remove('low');
 			secure.classList.remove('normal');
 			secure.classList.remove('valid');
@@ -299,29 +299,29 @@ username.addEventListener('input', ()=>{
 	{
 			username.classList.add('valid');
 			username.classList.remove('invalid');
-			text.innerHTML = "";
+			text.html("");
 			btn. disabled  = false;
 				
 		if(username.value.length > 20)
 		{
 			username.classList.add('invalid');
 			username.classList.remove('valid');
-			text.innerHTML = "Логин не должен быть больше 20 символов";
-			text.style.color = "red";
+			text.html("Логин не должен быть больше 20 символов");
+			text.css("color", "red");
 			btn. disabled  = true;
 		}else
 		{
 			username.classList.add('valid');
 			username.classList.remove('invalid');
-			text.innerHTML = "";
+			text.html("");
 			btn. disabled  = false;
 		}
 	}else
 	{
 		username.classList.add('invalid');
 		username.classList.remove('valid');
-		text.innerHTML = "Логин не должен быть менее 5 символов";
-		text.style.color = "red";
+		text.html("Логин не должен быть менее 5 символов");
+		text.css("color" ,"red");
 		btn. disabled  = true;
 	}
 	if(password.value.length < 1)

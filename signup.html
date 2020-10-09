@@ -38,17 +38,15 @@
       <!--Start of signup-area-->
       <div
         class="landing-form"
-        style="max-width: 450px; margin: 50px auto"
+        style="max-width: 450px; margin: 50px auto;"
         id="landing-form"
       >
-        <center>
-          <h1 class="cursor-d">Регистрация</h1>
-          <br />
-          <p id="text">Надежность:</p>
-          <div id="security"></div>
-          <span id="requestText"></span>
-        </center>
-        <form action="#" method="POST" id="form" name="form">
+		<form action="#" method="POST" id="form" name="form">
+				 <h1 class="cursor-d">Регистрация</h1>
+				 <br />
+				 <p id="text">Надежность:</p>
+				 <div id="security"></div>
+				 <span id="requestText"></span>
           <center>
             <input
               type="text"
@@ -71,7 +69,8 @@
                   name="password"
                   class="landing-input position-rel"
                   placeholder="Пароль"
-                  id="password"
+						id="password"
+						autocomplete="false"
                 />
                 <div
                   class="fa fa-eye"
@@ -87,7 +86,8 @@
                   name="password2"
                   class="landing-input position-rel"
                   placeholder="Повторите пароль"
-                  id="password2"
+						id="password2"
+						autocomplete="off"
                 />
                 <div
                   class="fa fa-eye"
