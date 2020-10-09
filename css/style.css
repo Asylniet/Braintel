@@ -270,7 +270,7 @@
  
  .fa-eye:before,
  .fa-eye-slash:before {
-	background-color: #ffffff;
+	background-color: transparent;
 	width: 15px;
 	height: 15px;
 	z-index: 3;
