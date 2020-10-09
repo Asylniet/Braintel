@@ -898,7 +898,7 @@ i.fa-times {
 
 .welcome {
   width: 100%;
-  min-height: 100vh;
+  min-height: calc(100vh - 80px);
 }
 
 .welcome .d-flex {
@@ -945,6 +945,10 @@ i.fa-times {
 #scene img.ness {
   position: static;
 }
+
+
+
+
 
 @media (max-width: 630px) {
   .lesson-header h1 {
