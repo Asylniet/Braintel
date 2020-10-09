@@ -48,6 +48,7 @@
 					<center>
 						<h2>Личная информация</h2>
 					</center>
+					<span id="requestText"></span>
 					<font>Логин</font>
 					<input type="text" name="login" class="setting-input" value="Yakov Vakov" id="username">
 					<font>Email</font>
@@ -66,9 +67,13 @@
 						</div>
 
 						<font>Новый пароль</font>
-						<div style="display: inline-block" class="position-rel">
-							<input type="password" name="password" class="setting-input" id="password"/>
-							<div class="fa fa-eye" id="toggle" onclick="showHide()" style="top: 23px; right: 15px; position: absolute"></div>
+						<div>
+							<div>
+								<div style="display: inline-block" class="position-rel">
+									<input type="password" name="password" class="setting-input" id="password"/>
+									<div class="fa fa-eye" id="toggle" onclick="showHide()" style="top: 23px; right: 15px; position: absolute"></div>
+								</div>
+							</div>
 						</div>
 
 						<font>Повторите новый пароль</font>
@@ -78,7 +83,12 @@
 						</div>
 					</div>
 
-					<button type="submit" name="button" class="start login-btn cursor-p" id="button" onClick="checkForm()">
+					<button type="submit" name="button" class="start login-btn cursor-p" id="button" onClick="checkForm()" style="display: none;">
+						Отправить
+					 </button>
+
+					 <!-- important -->
+					<button type="submit" name="button" class="start login-btn cursor-p" onClick="checkForm()">
               		Отправить
            		 </button>
 				</form>
