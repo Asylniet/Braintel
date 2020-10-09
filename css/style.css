@@ -247,12 +247,73 @@
   z-index: 3;
 }
 
+.settings{
+	text-align: center;
+}
+
+.setting-input {
+	border: 1px solid #ebebeb;
+	padding: 10px;
+	font-size: 16px;
+	margin: 10px auto 20px auto;
+	border-radius: 6px;
+	outline: none;
+	-webkit-transition-duration: 500ms;
+	transition-duration: 500ms;
+	background-color: none;
+	font-style: normal;
+	font-family: inherit;
+	width: 50%;
+	min-width: 300px;
+	position: relative;
+ }
+ 
+ .fa-eye:before,
+ .fa-eye-slash:before {
+	background-color:transparent;
+	width: 15px;
+	height: 15px;
+	z-index: 3;
+ }
+
+ .setting-input:hover,
+.setting-input:focus {
+  border: 1px solid black;
+}
+
+.settings .profile{
+	width: 100px;
+	height: 100px;
+}
+
+.settings .profile .fa-user{
+	font-size: 50px;
+}
+
+.settings font{
+	margin: 0 auto 0 0;
+}
+
+.profile {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	position: relative;
+	background: #ebebeb;
+ }
+ 
+ .profile .fa-user {
+	color: #9e9e9e;
+	font-size: 30px;
+ }
+
 #security {
   width: 200px;
   height: 1px;
   background-color: #ebebeb;
   position: relative;
   display: none;
+  margin: 0 auto;
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   transition-timing-function: ease;
@@ -362,7 +423,7 @@ input[type="number"] {
 #requestText {
   color: red;
   font-weight: 300;
-  margin: 3px;
+  margin: 3px 3px 20px 3px;
   width: 300px;
 }
 
