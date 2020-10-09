@@ -299,6 +299,12 @@
 	font-size: 30px;
  }
 
+ #toggle{
+	top: 37px; 
+	right: 15px; 
+	position: absolute;
+ }
+
 #security {
   width: 200px;
   height: 1px;
