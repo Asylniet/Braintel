@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *Must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Braintel | Мои курсы</title>
+    <title>Braintel | Сохраненные</title>
 
     <!-- Favicon -->
     <link rel="icon" href="/img/favicon.png" />
@@ -37,15 +37,15 @@
 		
 		<div class="welcome m-80 d-flex column">
 			<div class="image fly">
-				<img src="/img/course-welcome.jpg" alt="">
+				<img src="/img/course-welcome-saved.jpg" alt="">
 			</div>
 			<center>
-				<h2>Здесь будут появляться ваши начатые курсы</h2>
+				<h2>Здесь будут появляться ваши сохраненные курсы</h2>
 			</center>
 		</div>
 
 		<center class="m-50">
-			<h1>Начатые курсы</h1>
+			<h1>Сохраненные курсы</h1>
 		 </center>
 
 		<div class="d-flex wrap" style="align-items: stretch">
@@ -78,9 +78,9 @@
 					  <h3 style="color: #000000b4">Имя Фамилия</h3>
 					</div>
 					<font>
-					  <div></div>
-					  24%
-					  <div class="fa fa-bookmark-o"></div>
+					  <div class="fa fa-user-o"></div>
+					  24
+					  <div class="fa fa-bookmark"></div>
 					</font>
 				 </div>
 			  </div>
@@ -116,9 +116,9 @@
 					  <h3 style="color: #000000b4">Имя Фамилия</h3>
 					</div>
 					<font>
-					  <div></div>
-					  22%
-					  <div class="fa fa-bookmark-o"></div>
+					  <div class="fa fa-user-o"></div>
+					  22
+					  <div class="fa fa-bookmark"></div>
 					</font>
 				 </div>
 			  </div>
@@ -153,9 +153,9 @@
 					  <h3 style="color: #000000b4">Имя Фамилия</h3>
 					</div>
 					<font>
-					  <div></div>
-					  46%
-					  <div class="fa fa-bookmark-o"></div>
+					  <div class="fa fa-user-o"></div>
+					  46
+					  <div class="fa fa-bookmark"></div>
 					</font>
 				 </div>
 			  </div>
@@ -173,7 +173,7 @@
 	 <script src="/js/core.js"></script>
 	 <script type="text/javascript">
       $(document).ready(function () {
-        $(".fa-bookmark-o").click(function () {
+        $(".fa-bookmark").click(function () {
           $(this).toggleClass("fa-bookmark-o");
           $(this).toggleClass("fa-bookmark");
           $(this).toggleClass("big");

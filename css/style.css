@@ -456,6 +456,11 @@ input[type="number"] {
   }
 }
 
+.fly{
+	-webkit-animation: fly 3s infinite ease-in-out;
+  animation: fly 3s infinite ease-in-out;
+}
+
 .lessons .blocks {
   padding-top: 0px;
   padding-bottom: 0px;
@@ -913,6 +918,7 @@ input[type="number"] {
 .course_container font .fa.fa-bookmark-o {
   cursor: pointer;
   margin: 0 0 0 15px;
+  transition: all 0.3s ease;
 }
 
 .course_container font .fa.fa-bookmark {
@@ -970,6 +976,20 @@ input[type="number"] {
 .journey_block a:focus {
   color: #000;
 }
+
+.image{
+	width: 30%;
+	min-width: 300px;
+}
+
+.image img{
+	width: 100%;
+}
+
+.welcome {
+	width: 100%;
+	min-height: calc(100vh - 80px);
+ }
 
 @media (max-width: 630px) {
   .two-columns .d-flex.column {

@@ -589,10 +589,6 @@ a.opacity {
 	color: rgb(221, 60, 60);
 }
 
-.like-reply .fa-heart.big{
-	transform: scale(1.3);
-}
-
 .like-reply .fa-reply:hover{
 	color: rgb(63, 124, 202);
 }
