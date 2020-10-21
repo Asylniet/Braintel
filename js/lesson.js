@@ -48,7 +48,7 @@ $(document).ready(function () {
   const circle = $(".progress-ring-circle");
   const radius = circle.attr("r");
   const circumference = 2 * Math.PI * radius;
-  const percentage = $('.percent').attr("data-target");
+  const percentage = $('.percent').html();
 
   circle.css("stroke-dasharray", `${circumference} ${circumference}`);
   circle.css("stroke-dashoffset", circumference)

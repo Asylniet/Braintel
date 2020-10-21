@@ -62,8 +62,6 @@
   width: 100%;
   padding: 60px 0;
   margin-bottom: 20px;
-  /* margin-left: 10px;
-  margin-right: 10px; */
   -webkit-transition-duration: 1000ms;
   transition-duration: 1000ms;
   box-sizing: content-box;
@@ -80,6 +78,68 @@
 .blocks font {
   font-size: 40px;
   color: #676dbc;
+}
+
+.blocks-lessons{
+	min-width:300px; 
+	max-width:300px; 
+	border: 1px solid #ebebeb;
+	margin: 20px 50px;
+	text-align: center;
+	position: relative;
+}
+
+.blocks-lessons:hover{
+	box-shadow: none;
+	transform: scale(1.03);
+}
+
+.tag{
+	position: absolute;
+	top: -20px;
+	left: -15px;
+	font-size: 18px;
+	background: rgb(112, 126, 245);
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	color: #fff;
+}
+
+.tag span.tags{
+	position: absolute;
+	left: 85%;
+	color: #fff;
+	background:rgb(112, 126, 245);
+	padding: 5px;
+	border-radius: 3px;
+}
+
+.blocks-lessons span{
+	font-size: 16px;
+	color: rgb(165, 165, 165);
+}
+
+.blocks-lessons .footer{
+	background: rgb(112, 126, 245);
+	width: calc(100% - 20px);
+	padding: 15px 10px;
+	margin-top: 10px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+
+.blocks-lessons div font{
+	font-size: 16px;
+	color:rgb(255, 255, 255);
+}
+
+.blocks-lessons img{
+	height: 100%;
+}
+
+.blocks-lessons a{
+	height: 160px;
 }
 
 .text-about {
