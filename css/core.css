@@ -93,7 +93,6 @@ input {
 			 appearance: none;
 			 outline: none; 
 			 border-radius: 6px;
-	
 }
 
 input[type=text] {   
@@ -102,6 +101,15 @@ input[type=text] {
 	-moz-appearance: none;
 	appearance: none;
 	outline: none;    
+}
+
+input[type=search] {   
+	/* Remove First */
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: none;  
+	border-radius: 6px;  
 }
 
 a {
