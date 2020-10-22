@@ -91,6 +91,14 @@ input {
 	
 }
 
+input[type=text] {   
+	/* Remove First */
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	outline: none;    
+}
+
 a {
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
