@@ -25,10 +25,12 @@ body {
 
 .main * {
   padding: 0;
+  box-sizing: border-box;
 }
 
 font {
   font-family: "Open Sans", sans-serif;
+  font-size: 18px;
 }
 
 /*importants*/
@@ -478,6 +480,16 @@ footer .form {
 .fa-whatsapp:hover,
 .fa-whatsapp:focus {
   color: #19c945;
+}
+
+.fa-apple:hover,
+.fa-apple:focus {
+	color: rgb(172, 172, 172);
+}
+
+.fa-google:hover,
+.fa-google:focus{
+	color: rgb(10, 98, 214);
 }
 
 /*Navbar*/

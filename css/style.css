@@ -90,9 +90,12 @@
 	position: relative;
 }
 
-.blocks-lessons:hover{
+.blocks-lessons:hover,
+.blocks-lessons:focus{
 	box-shadow: none;
-	transform: scale(1.03);
+	transform: scale(1.03) translateZ(0);
+	backface-visibility: hidden;
+	-webkit-font-smoothing:subpixel-antialiased;
 }
 
 .tag{
@@ -207,10 +210,28 @@
   width: 80%;
 }
 
+/* .achievements:before
+{
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: -1;
+    left: 0;
+    z-index: -1;
+    background: url(/img/bg.svg) 0 0 repeat;
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+} */
+
 /* Slider */
 
 .comments {
   min-width: 0;
+  background-image: url(/img/bg.svg);
 }
 
 .slider {
@@ -230,6 +251,7 @@
   text-align: center;
   min-width: 0;
   margin: 0;
+  background: #fff;
 }
 
 /* Ограничивающая оболочка */
@@ -267,6 +289,10 @@
   transition: all 0.3s ease;
 }
 
+.slick-dots li button:hover{
+	transform: scale(1);
+}
+
 .avatar {
   width: 40px;
   height: 40px;
@@ -284,7 +310,27 @@
   padding: 60px;
   margin: 0;
   text-align: center;
+  box-sizing: content-box;
 }
+
+.more-signup{
+	margin: 10px;
+}
+
+.more-signup i{
+	width: 30px;
+	height: 30px;
+	font-size: 18px;
+	padding: 5px;
+	border-radius: 50%;
+	margin: 0 5px;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 
 .landing-input {
   border: 1px solid #ebebeb;
@@ -1054,8 +1100,8 @@ input[type="number"] {
  }
 
  .blog{
-	 margin-top: 80px;
-	 background: #ebebeb;
+	 margin-top: 40px;
+	 background: #fff;
 	 align-items: flex-start;
  }
 
@@ -1079,6 +1125,43 @@ input[type="number"] {
 	
 .blog-content{
 	width: 60%;
+	min-width: 300px;
+	padding: 0;
+}
+
+.blog__header{
+	height: calc(100vh - 80px);
+	max-height: 600px;
+	width: 100%;
+	background: url(/img/bg-blog.svg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin-top: 80px;
+	padding: 10px;
+	background-attachment: fixed;
+	margin-bottom: 10vw;
+	/* overflow: hidden; */
+}
+
+.blog__header a{
+	font-size: 18px;
+}
+
+.blog__header .font{
+	max-width: 600px;
+	font-size: 18px;
+}
+
+.blog__header br + font {
+	font-size: 19px;
+}
+
+.blog__header-content{
+	/* margin-top: -20%; */
+	/* padding: 0 50px; */
+	margin: 50px auto 5px;
+	max-width: 50%;
+	min-width: 300px;
 }
 
 .blog-content font{
@@ -1095,47 +1178,16 @@ input[type="number"] {
 	margin: 10px 0;
 }
 
-.suggestions{
-	width: 25%;
-	font-size: 20px;
-	height: calc(100vh - 120px);
-	position: sticky;
-	position: -webkit-sticky;
-	top: 85px;
+.blog__header .image.first{
+	/* position: absolute;
+	top: 110%;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-bottom: 10px; */
+	width: 60%;
+	margin: 0 auto;
 }
 
-.suggestions-block{
-	margin: 10px 0;
-	width: 100%;
-	max-height: 150px;
-	overflow: hidden;
-	position: relative;
-}
-
-.suggestions-block img{
-	width: 100%;
-	position: relative;
-}
-
-.suggestions-block::after{
-	content: "";
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(to top, #000, transparent);
-	z-index: 0;
-	opacity: 0.6;
-}
-
-.suggestions-block .header{
-	position: absolute;
-	bottom: 5px;
-	color: #ffff;
-	text-align: center;
-	z-index: 2;
-}
 
 font.header{
 	font-size: 22px;
@@ -1167,25 +1219,32 @@ font.quote::before{
 	bottom: 0;
 }
 
-@media (max-width: 700px) {
-	.suggestions {
-	  display: none;
-	}
-	.blog-content{
-		width: 100%;
-		padding: 10px;
+@media (min-width: 1200px) {
+	.blog__header {
+	  margin-bottom: 280px;
 	}
  }
- 
+
+@media (max-width: 1000px) {
+	.parallax {
+	  background-attachment: scroll;
+	}
+	.blog__header {
+		background-attachment: scroll;
+	 }
+ }
 
 @media (max-width: 630px) {
   .two-columns .d-flex.column {
     width: 80%;
   }
+  .comments{
+	  background-repeat: no-repeat;
+  }
 }
 
-@media (max-width: 1000px) {
-	.parallax {
-	  background-attachment: scroll;
+@media (max-width: 500px) {
+	.comments{
+		background-image: none;
 	}
  }

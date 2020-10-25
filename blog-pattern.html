@@ -27,16 +27,6 @@
   </head>
 
   <body>
-	<style>
-      .main {
-        overflow: visible;
-      }
-      #header {
-        position: fixed;
-        top: 0;
-        z-index: 10;
-      }
-    </style>
     <!-- Preloader -->
     <div id="preloader">
       <div class="spinner"></div>
@@ -45,14 +35,27 @@
     <div class="main" id="categories">
 		<div id="header"></div>
 
-		<div class="blog space-between position-rel">	
-			<div class="blog-content blog-parts">
-				<center>
+		<div class="blog position-rel">	
+			<div class="blog__header">
+				<div class="blog__header-content">
+					<a href="/blog.html"><i class="fa fa-arrow-left"></i> Каталог блогов</a>
 					<h1>
 						Название блога
 					</h1>
-				</center>
-				<div class="image d-flex"><img src="/img/bg4.jpg" alt=""></div>
+					<div class="font">
+						<font>
+							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime odio autem possimus voluptas officiis repudiandae corrupti aliquid adipisci amet voluptatibus.
+						</font>
+					</div><br>
+					<font>
+						<i class="fa fa-history"></i>
+						4 минуты
+					</font>
+				</div>
+				<div class="image d-flex first"><img src="/img/bg4.jpg" alt=""></div>
+			</div>
+			<!-- <div class="ness"></div> -->
+			<div class="blog-content blog-parts">
 				<font>
 					Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem incidunt ducimus dolorem officia voluptas nihil earum quis optio consequatur autem illum eaque iure perspiciatis, nemo, illo nostrum, velit similique officiis.
 				</font>
@@ -88,41 +91,109 @@
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet repudiandae, iste eum quisquam sit laudantium possimus nisi quas deleniti doloremque velit commodi temporibus suscipit ipsum dolore voluptatibus quae expedita repellat.
 				</font>
 			</div>
+		</div>
+		<!--Start of blog section-->
+	<div class="m-80">	
+		<center><p><h1>Больше блогов</h1></p></center>
 
-			<div class="blog-parts suggestions">
-				<center>
-					<font class="header">
-						Лучшее за неделю
-					</font>
-				</center>
-				<div class="suggestions-block d-flex">
-					<img src="/img/bg2.jpg" alt="">
-					<div class="header">
-						<font>
-							Как научиться читать в 10 раз быстрее за 1 минуту
-						</font>
-					</div>
+		<div class="space-around wrap lessons">
+			<!--Single block-->
+			
+			<div class="blocks m-50 blocks-lessons space-between">
+				<div class="tag d-flex">
+					<i class="fa fa-book"></i>
+					<span class="tags">Культура</span>
 				</div>
-
-				<div class="suggestions-block d-flex">
-					<img src="/img/bg1.jpg" alt="">
-					<div class="header">
-						<font>
-							Как научиться списывать в онлайн тестах
-						</font>
-					</div>
+				<a href="/blog-pattern.html">
+					<img src="img/1.jpg" class="lesson-images">
+				</a>
+				<div class="p-10">
+					<h2>Улучшение произношения</h2>
+					<span>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quidem, repudiandae excepturi nisi dolorem earum repellendus iste aliquid porro animi.
+					</span>
 				</div>
-
-				<div class="suggestions-block d-flex">
-					<img src="/img/bg4.jpg" alt="">
-					<div class="header">
-						<font>
-							Как научиться списывать в онлайн тестах
-						</font>
-					</div>
+				<div class="footer space-between">
+					<font class="m-10">3 мин</font>
+					<font class="m-10">21.17.2015</font>
+				</div>
+			</div>
+			
+		
+			<!--Single block-->
+			
+			<div class="blocks m-50 blocks-lessons space-between">
+				<a href="/blog-pattern.html">
+					<img src="img/2.jpg" class="lesson-images">
+				</a>
+				<div class="p-10">
+					<h2>Улучшение произношения</h2>
+					<span>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quidem, repudiandae excepturi nisi dolorem earum repellendus iste aliquid porro animi.
+					</span>
+				</div>
+				<div class="footer space-between">
+					<font class="m-10">3 мин</font>
+					<font class="m-10">21.17.2015</font>
+				</div>
+			</div>
+			
+			<!--Single block-->
+			
+			<div class="blocks m-50 blocks-lessons space-between">
+				<a href="/blog-pattern.html">
+					<img src="img/2.jpg" class="lesson-images">
+				</a>
+				<div class="p-10">
+					<h2>Улучшение произношения</h2>
+					<span>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quidem, repudiandae excepturi nisi dolorem earum repellendus iste aliquid porro animi.
+					</span>
+				</div>
+				<div class="footer space-between">
+					<font class="m-10">3 мин</font>
+					<font class="m-10">21.17.2015</font>
+				</div>
+			</div>
+			
+			<!--Single block-->
+			
+			<div class="blocks m-50 blocks-lessons space-between">
+				<a href="/blog-pattern.html">
+					<img src="img/1.jpg" class="lesson-images">
+				</a>
+				<div class="p-10">
+					<h2>Улучшение произношения</h2>
+					<span>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quidem, repudiandae excepturi nisi dolorem earum repellendus iste aliquid porro animi.
+					</span>
+				</div>
+				<div class="footer space-between">
+					<font class="m-10">3 мин</font>
+					<font class="m-10">21.17.2015</font>
+				</div>
+			</div>
+			
+			<!--Single block-->
+			
+			<div class="blocks m-50 blocks-lessons space-between">
+				<a href="/blog-pattern.html">
+					<img src="img/1.jpg" class="lesson-images">
+				</a>
+				<div class="p-10">
+					<h2>Улучшение произношения</h2>
+					<span>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quidem, repudiandae excepturi nisi dolorem earum repellendus iste aliquid porro animi.
+					</span>
+				</div>
+				<div class="footer space-between">
+					<font class="m-10">3 мин</font>
+					<font class="m-10">21.17.2015</font>
 				</div>
 			</div>
 		</div>
+	</div>
+	<!--End of blog section-->
 
       <div id="footer"></div>
     </div>
@@ -133,22 +204,6 @@
     <!-- Active js -->
     <script src="/js/main.js"></script>
 	 <script src="/js/core.js"></script>
-	 <script>
-		function getSelectionText() {
-            var text = "";
-            if (window.getSelection) {
-                text = window.getSelection().toString();
-            } else if (document.selection && document.selection.type != "Control") {
-                text = document.selection.createRange().text;
-            }
-            return text;
-        }
-        $(document).ready(function (){
-           $('div').mouseup(function (e){
-               console.log(getSelectionText());
-           });
-        });
-	 </script>
   </body>
   </body>
 </html>
